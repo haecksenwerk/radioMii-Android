@@ -4,11 +4,13 @@
        alt="radioMii Logo"
        width="180">
 </p>
-<br />
+
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;
 [![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)&nbsp;
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/haecksenwerk)&nbsp;
+
+<br />
 
 **Mii** 美音 &nbsp;·&nbsp; 美 _(beautiful)_ 音 _(sound)_
 
@@ -17,7 +19,7 @@ A modern Android app for browsing and playing internet radio streams, built with
 Station data is sourced from the community-maintained [radio-browser.info](https://www.radio-browser.info/) API.
 
 ---
-
+<br />
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/search_cards.png"
        alt="" width="180">&nbsp;&nbsp;
@@ -33,24 +35,8 @@ Station data is sourced from the community-maintained [radio-browser.info](https
        alt="" width="180">&nbsp;&nbsp;
 </p>
 
----
 
 ## Installation
-
-<p align="center">
-  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22:%22de.haecksenwerk.radiomii%22,%22url%22:%22https://github.com/haecksenwerk/radioMii-Android%22,%22author%22:%22haecksenwerk%22,%22name%22:%22radioMii%22%7D">
-    <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
-         alt="Get it on Obtainium" 
-         height="40"
-         style="vertical-align: middle;">
-  </a>
-  <a href="https://github.com/haecksenwerk/radioMii-Android/releases">
-    <img src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" 
-         alt="Get it on GitHub" 
-         height="60"
-         style="vertical-align: middle;">
-  </a>
-</p>
 
 ### Obtainium
 
@@ -68,6 +54,16 @@ The app‑signing certificate hash is shown in the Obtainium info screen for rad
 ```
 88:CF:E4:BF:74:80:E7:BC:7B:CC:37:64:B1:73:5B:8E:B9:A1:99:2D:A9:7F:08:4A:FD:47:9C:41:ED:4F:7D:B8
 ```
+<br />
+<p align="center">
+  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22:%22de.haecksenwerk.radiomii%22,%22url%22:%22https://github.com/haecksenwerk/radioMii-Android%22,%22author%22:%22haecksenwerk%22,%22name%22:%22radioMii%22%7D">
+    <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
+         alt="Get it on Obtainium" 
+         height="40"
+         style="vertical-align: middle;">
+  </a>
+</p>
+<br />
 
 ### Manual download
 

@@ -678,7 +678,13 @@ fun SettingsScreen(
                             )
                         },
                     )
-                    if (settings.showFindOnButton) {
+                    AnimatedVisibility(
+                        visible = settings.showFindOnButton,
+                        enter = expandVertically(expandFrom = Alignment.Top, animationSpec = tween(durationMillis = 300)) +
+                                slideInVertically(initialOffsetY = { fullHeight -> -fullHeight / 2 }, animationSpec = tween(durationMillis = 300)),
+                        exit = shrinkVertically(shrinkTowards = Alignment.Top, animationSpec = tween(durationMillis = 220)) +
+                               slideOutVertically(targetOffsetY = { fullHeight -> -fullHeight / 2 }, animationSpec = tween(durationMillis = 220)),
+                    ) {
                         SegmentedButtonRow(
                             title = stringResource(R.string.settings_find_in_provider),
                             options = MusicProvider.entries,
