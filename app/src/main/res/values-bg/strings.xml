@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">radioMii</string>
+
+    <!-- Navigation -->
+    <string name="nav_favorites">Любими</string>
+    <string name="nav_search">Търсене</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Common -->
+    <string name="common_cancel">Отказ</string>
+    <string name="common_done">Готово</string>
+    <string name="common_delete">Изтрий</string>
+    <string name="common_retry">Опитай отново</string>
+    <string name="common_live_radio">Радио на живо</string>
+
+    <!-- Search -->
+    <string name="search_by_name">Търсене по име</string>
+    <string name="search_by_tag">Търсене по жанр</string>
+    <string name="search_no_results">Няма резултати за търсенето</string>
+    <string name="search_error_message">Търсенето е неуспешно. Проверете връзката и опитайте отново.</string>
+    <string name="search_country">Държава</string>
+    <string name="search_country_any">Всяка</string>
+
+    <!-- Favorites -->
+    <string name="favorites_edit">Организиране на любими</string>
+    <string name="favorites_compact_view">Компактен изглед</string>
+    <string name="favorites_expanded_view">Разширен изглед</string>
+    <string name="favorites_empty_title">Няма любими станции</string>
+    <string name="favorites_empty_message">Търсете станции и докоснете ♥, за да ги добавите тук.</string>
+    <string name="favorites_show_filter_bar">Покажи лентата с филтри</string>
+    <string name="favorites_hide_filter_bar">Скрий лентата с филтри</string>
+    <string name="favorites_create_filter">Създай филтър</string>
+    <string name="favorites_all_stations">Всички</string>
+    <string name="favorites_create_filter_title">Нов филтър</string>
+    <string name="favorites_create_filter_placeholder">Име на филтъра</string>
+    <string name="favorites_create_filter_hint">Съвет: Присвоявайте станции, като плъзгате надясно в режим на редактиране.</string>
+    <string name="favorites_duplicate_filter">Вече съществува филтър с това име.</string>
+    <string name="favorites_assign_filter">Присвой филтър</string>
+    <string name="favorites_no_filters">Няма създадени филтри. Създайте един в Настройките.</string>
+    <string name="favorites_no_filters_snackbar">Няма филтри — създайте такъв в Настройките</string>
+    <string name="favorites_delete_filter">Изтрий филтъра</string>
+    <string name="favorites_delete_filter_message">Изтриване на филтъра \"%1$s\"? Станциите няма да бъдат премахнати от любимите.</string>
+    <string name="favorites_reorder_filters">Пренареждане на филтри</string>
+    <string name="favorites_saved">Любимите са запазени успешно</string>
+    <string name="favorites_loaded">Любимите са заредени успешно</string>
+    <string name="favorites_save_error">Неуспешен запис на любими</string>
+    <string name="favorites_load_error">Неуспешно зареждане на любими</string>
+
+    <!-- Settings – Search Options -->
+    <string name="settings_search_min_bitrate">Минимален битрейт (KB/s)</string>
+    <string name="settings_search_ignore_offline">Игнорирай офлайн станции</string>
+    <string name="settings_search_ignore_offline_desc">Потоци, недостъпни за по-дълго време</string>
+    <string name="settings_search_secure_only">Само защитени потоци</string>
+    <string name="settings_search_secure_only_desc">Филтриране само на HTTPS потоци</string>
+    <string name="settings_search_tag_buttons">Жанрови преки пътища</string>
+    <string name="settings_search_tag_buttons_desc">Карти или бутони за преки пътища в екрана за търсене</string>
+    <string name="settings_reorder_tags">Пренареждане на преките пътища</string>
+    <string name="settings_search_tag_order_desc">Промяна на реда на жанровите преки пътища</string>
+    <string name="settings_search_genre_shortcuts">Жанрови преки пътища</string>
+    <string name="settings_search_genre_cards">Карти</string>
+    <string name="settings_search_genre_buttons">Бутони</string>
+
+    <!-- Settings – Sort Options -->
+    <string name="settings_sort_order">Ред на сортиране</string>
+    <string name="settings_sort_descending">Низходящ</string>
+    <string name="settings_sort_ascending">Възходящ</string>
+    <string name="settings_sort_criteria">Критерий за сортиране</string>
+    <string name="settings_sort_votes">Гласове</string>
+    <string name="settings_sort_clicks">Кликвания/24ч</string>
+    <string name="settings_sort_country">Държава</string>
+    <string name="settings_sort_bitrate">Битрейт</string>
+
+    <!-- Settings – Appearance -->
+    <string name="settings_appearance_title">Външен вид</string>
+    <string name="settings_appearance_theme_mode">Режим на темата</string>
+    <string name="settings_appearance_light">Светла</string>
+    <string name="settings_appearance_dark">Тъмна</string>
+    <string name="settings_appearance_system">Система</string>
+    <string name="settings_appearance_theme_color">Цвят на темата</string>
+    <string name="settings_appearance_dynamic">Динамично</string>
+    <string name="settings_appearance_colors">Цветове</string>
+    <string name="settings_appearance_true_black">Истинско черно</string>
+    <string name="settings_appearance_true_black_desc">По-тъмна тема за OLED дисплеи</string>
+    <string name="settings_appearance_language">Език</string>
+    <string name="settings_appearance_language_system">Системен език</string>
+
+    <!-- Settings – Playback -->
+    <string name="settings_playback_title">Опции за възпроизвеждане</string>
+    <string name="settings_playback_background">Фоново възпроизвеждане</string>
+    <string name="settings_playback_background_desc">Възпроизвеждането продължава при затворено приложение</string>
+    <string name="settings_playback_resume_call">Продължи след разговор</string>
+    <string name="settings_playback_resume_call_desc">Продължи възпроизвеждането след телефонен разговор</string>
+
+    <!-- Settings – Find In -->
+    <string name="settings_find_in_title">Отвори в…</string>
+    <string name="settings_find_in_show_button">Покажи бутон в разширен плейър</string>
+    <string name="settings_find_in_show_button_desc">Отвори текущата песен в стрийминг услугата</string>
+    <string name="settings_find_in_music_detection">Скриване за говор &amp; новини</string>
+    <string name="settings_find_in_music_detection_desc">Автоматично скрива бутона, когато потокът не предоставя информация за песен</string>
+    <string name="settings_find_in_provider">Доставчик на музика</string>
+
+    <!-- Settings – Favorites management -->
+    <string name="settings_favorites_title">Любими</string>
+    <string name="settings_favorites_create_filter">Създай филтър</string>
+    <string name="settings_favorites_create_filter_desc">Добави нова група филтри за организиране на любими</string>
+    <string name="settings_favorites_reorder_filters">Пренареждане на филтри</string>
+    <string name="settings_favorites_reorder_filters_desc">Промяна на реда или изтриване на групи филтри</string>
+    <string name="settings_favorites_add_custom">Добави станция ръчно</string>
+    <string name="settings_favorites_add_custom_desc">Добави радиостанция чрез URL на поток</string>
+    <string name="settings_favorites_import">Зареди любими</string>
+    <string name="settings_favorites_import_desc">Зареди любими от файл</string>
+    <string name="settings_favorites_save">Запази любими</string>
+    <string name="settings_favorites_save_desc">Запиши любими в файл</string>
+    <string name="settings_favorites_overwrite">Презапиши последния архив</string>
+    <string name="settings_favorites_overwrite_desc">Директно замени предишния архивен файл</string>
+    <string name="settings_favorites_delete_all">Изчисти списъка с любими</string>
+    <string name="settings_favorites_delete_all_desc">Изтрий всички любими от списъка</string>
+    <string name="settings_favorites_highlight_unassigned">Подчертаване на неприсвоените</string>
+    <string name="settings_favorites_highlight_unassigned_desc">В режим на редактиране маркирай станциите, които не са присвоени към нито една група филтри</string>
+
+    <!-- Scheduled News -->
+    <string name="scheduled_news_title">Планирани новини</string>
+    <string name="scheduled_news_enable">Активирай планировчик на новини</string>
+    <string name="scheduled_news_interval">Интервал</string>
+    <string name="scheduled_news_hourly">Ежечасно</string>
+    <string name="scheduled_news_half_hourly">На всеки 30 мин</string>
+    <string name="scheduled_news_duration">Продължителност</string>
+    <string name="scheduled_news_off">Изкл.</string>
+    <string name="scheduled_news_minutes">%1$d мин</string>
+    <string name="scheduled_news_skip">Активирай бутон за пропускане</string>
+    <string name="scheduled_news_skip_desc">Връщане към предишната станция чрез натискане на бутона за пропускане</string>
+
+    <!-- Settings – About -->
+    <string name="settings_about_title">За приложението</string>
+    <string name="settings_about_app_info">Информация за приложението</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_all_favorites_title">Изтрий всички любими</string>
+    <string name="dialog_delete_all_favorites_message">Сигурни ли сте, че искате да изтриете всички любими станции и групи от филтри? Тази операция не може да бъде отменена.</string>
+    <string name="dialog_playback_error_title">Грешка при възпроизвеждане</string>
+    <string name="dialog_playback_error_message">Не може да се възпроизведе тази станция. Потокът може да е офлайн или неподдържан.</string>
+
+    <!-- App Info -->
+    <string name="app_info_title">За приложението</string>
+    <string name="app_info_section">Информация за приложението</string>
+    <string name="app_info_version">Версия на приложението</string>
+    <string name="app_info_author">Автор</string>
+    <string name="app_info_radio_source">Източник на информация за станции</string>
+    <string name="app_info_licenses">Лицензи с отворен код</string>
+    <string name="app_info_licenses_desc">Софтуер на трети страни, използван в приложението</string>
+    <string name="app_info_licenses_title">Лицензи с отворен код</string>
+    <string name="app_info_legal_info">Правна информация</string>
+    <string name="app_info_legal_info_desc">Поверителност, използване на данни &amp; отказ от отговорност</string>
+
+    <!-- Language selection -->
+    <string name="language_select">Изберете език</string>
+
+    <!-- Station overlay / context menu -->
+    <string name="overlay_open_homepage">Отвори началната страница</string>
+    <string name="overlay_share_station">Сподели линк към станцията</string>
+    <string name="overlay_copy_song_info">Копирай информацията за песента</string>
+    <string name="overlay_vote">Гласувай за тази станция</string>
+    <string name="overlay_vote_success">Благодаря за гласа ти!</string>
+    <string name="overlay_vote_already">Вече сте гласували за тази станция</string>
+    <string name="overlay_vote_error">Гласът не можа да бъде подаден</string>
+    <string name="overlay_scheduled_news">Планирани новини</string>
+    <string name="overlay_find_station_icon">Намери икона на станцията</string>
+    <string name="overlay_find_icon_searching">Търсене на икони…</string>
+    <string name="overlay_find_icon_pick">Докоснете икона, за да я използвате</string>
+    <string name="overlay_find_icon_no_results">Не са намерени икони за тази станция.</string>
+
+    <!-- Custom stream -->
+    <string name="custom_stream_title">Добавяне на персонализиран поток</string>
+    <string name="custom_stream_name">Име на станцията</string>
+    <string name="custom_stream_url">URL на потока</string>
+    <string name="custom_stream_codec">Кодек</string>
+    <string name="custom_stream_bitrate">Битрейт (kbps)</string>
+    <string name="custom_stream_tags">Тагове / Жанр (незадължително)</string>
+    <string name="custom_stream_tags_placeholder">напр. джаз, поп, класика</string>
+    <string name="custom_stream_add">Добавяне</string>
+    <string name="custom_stream_homepage">Начална страница (незадължително)</string>
+    <string name="custom_stream_country_code">Код на държава (незадължително)</string>
+    <string name="custom_stream_country_code_placeholder">напр. DE или UK</string>
+    <string name="custom_stream_url_invalid">Моля, въведете валиден URL на поток (трябва да започва с http)</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_timer_title">Таймер за сън</string>
+    <string name="sleep_timer_duration">Продължителност (минути)</string>
+    <string name="sleep_timer_start">Стартирай таймера</string>
+    <string name="sleep_timer_stop">Спри таймера</string>
+    <string name="sleep_timer_remaining">Радиото ще спре след %1$d минути</string>
+    <string name="sleep_timer_cancel_on_stop">Автоматично отменяне при спиране на възпроизвеждането</string>
+    <string name="sleep_timer_cancel_on_stop_desc">Нулира се, ако звукът бъде прекъснат или започне нова станция</string>
+
+    <!-- Legal info -->
+    <string name="legal_title">Правна информация</string>
+    <string name="legal_about_title">За това приложение</string>
+    <string name="legal_about_text">radioMii е безплатен проект с отворен код (FOSS), създаден от любители, чиято единствена мотивация е да разработват полезни приложения за общността. Това приложение се разработва на нетърговска основа. Нямаме търговски интерес и никакъв интерес към събирането, обработването или монетизирането на вашите данни.</string>
+    <string name="legal_privacy_title">Поверителност &amp; използване на данни</string>
+    <string name="legal_privacy_text">radioMii не проследява, не събира и не съхранява никакви лични или потребителски данни. Без аналитика, без телеметрия, без потребителски профили.\n\nЕдинствените данни, които се съхраняват, са вашият списък с любими станции, който се пази локално на вашето устройство. Ако изберете да архивирате или експортирате любимите си в Google Drive, това прехвърляне се инициира и контролира единствено от вас. Никакви данни не се изпращат на разработчиците на radioMii по никое време.</string>
+    <string name="legal_third_party_title">Услуги на трети страни &amp; мрежов достъп</string>
+    <string name="legal_third_party_text">radioMii извлича информация за станции от поддържаната от общността база данни radio-browser.info. Когато разглеждате или търсите станции, устройството ви се свързва със сървърите на radio-browser.info, които може да виждат вашия IP адрес и метаданни на заявките.\n\nКогато пускате радиостанция, устройството ви се свързва директно с поточния сървър, управляван от съответния доставчик на станцията. Тези сървъри на трети страни може също да виждат вашия IP адрес и други данни за връзката.\n\nРазработчиците на radioMii нямат контрол върху тези услуги на трети страни.</string>
+    <string name="legal_disclaimer_title">Отказ от отговорност за съдържание</string>
+    <string name="legal_disclaimer_text">radioMii не хоства, не подбира и не контролира редакционно никакво съдържание. Всички радиостанции се възпроизвеждат чрез поточни връзки от базата данни radio-browser.info.\n\nНякои потоци може да излъчват съдържание, което е ограничено по възраст, подлежи на лицензионни изисквания или е забранено от законите на вашата страна или юрисдикция. Потребителят е единствено отговорен да гарантира, че използването на приложението е в съответствие с всички приложими местни закони и разпоредби.</string>
+    <string name="legal_no_warranty_title">Без гаранция</string>
+    <string name="legal_no_warranty_text">radioMii се предоставя „такъв, какъвто е" без никаква гаранция от какъвто и да е вид, изрична или подразбираща се. Разработчиците не дават никакви гаранции относно наличността, точността или надеждността на приложението или съдържанието на трети страни, достъпно чрез него. Използването на приложението е изцяло на ваш риск.</string>
+
+    <!-- Network / server dialogs -->
+    <string name="dialog_no_internet_title">Няма интернет връзка</string>
+    <string name="dialog_no_internet_message">Моля, проверете Wi‑Fi или мобилната мрежа и опитайте отново.</string>
+    <string name="dialog_server_unreachable_title">Сървърите не са достъпни</string>
+    <string name="dialog_server_unreachable_message">Сървърите на radio-browser в момента не отговарят. Все още можете да пускате любимите си станции.</string>
+</resources>

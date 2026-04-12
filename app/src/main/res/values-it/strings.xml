@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">radioMii</string>
+
+    <!-- Navigation -->
+    <string name="nav_favorites">Preferiti</string>
+    <string name="nav_search">Ricerca</string>
+    <string name="nav_settings">Impostazioni</string>
+
+    <!-- Common -->
+    <string name="common_cancel">Annulla</string>
+    <string name="common_done">Fatto</string>
+    <string name="common_delete">Elimina</string>
+    <string name="common_retry">Riprova</string>
+    <string name="common_live_radio">Radio in diretta</string>
+
+    <!-- Search -->
+    <string name="search_by_name">Cerca per nome</string>
+    <string name="search_by_tag">Cerca per genere</string>
+    <string name="search_no_results">Nessun risultato per questa ricerca</string>
+    <string name="search_error_message">Ricerca non riuscita. Controlla la connessione e riprova.</string>
+    <string name="search_country">Paese</string>
+    <string name="search_country_any">Qualsiasi</string>
+
+    <!-- Favorites -->
+    <string name="favorites_edit">Organizza i preferiti</string>
+    <string name="favorites_compact_view">Vista compatta</string>
+    <string name="favorites_expanded_view">Vista espansa</string>
+    <string name="favorites_empty_title">Nessun preferito ancora</string>
+    <string name="favorites_empty_message">Cerca stazioni e tocca il ♥ per aggiungerle qui.</string>
+    <string name="favorites_show_filter_bar">Mostra filtri</string>
+    <string name="favorites_hide_filter_bar">Nascondi filtri</string>
+    <string name="favorites_create_filter">Crea filtro</string>
+    <string name="favorites_all_stations">Tutti</string>
+    <string name="favorites_create_filter_title">Nuovo filtro</string>
+    <string name="favorites_create_filter_placeholder">Nome del filtro</string>
+    <string name="favorites_create_filter_hint">Suggerimento: assegna stazioni scorrendo a destra in modalità modifica.</string>
+    <string name="favorites_duplicate_filter">Esiste già un filtro con questo nome.</string>
+    <string name="favorites_assign_filter">Assegna filtro</string>
+    <string name="favorites_no_filters">Nessun filtro creato. Creane uno nelle Impostazioni.</string>
+    <string name="favorites_no_filters_snackbar">Nessun filtro ancora — creane uno prima nelle Impostazioni</string>
+    <string name="favorites_delete_filter">Elimina filtro</string>
+    <string name="favorites_delete_filter_message">Eliminare il filtro \"%1$s\"? Le stazioni non verranno rimosse dai preferiti.</string>
+    <string name="favorites_reorder_filters">Riordina filtri</string>
+    <string name="favorites_saved">Preferiti salvati con successo</string>
+    <string name="favorites_loaded">Preferiti caricati con successo</string>
+    <string name="favorites_save_error">Impossibile salvare i preferiti</string>
+    <string name="favorites_load_error">Impossibile caricare i preferiti</string>
+
+    <!-- Settings – Search Options -->
+    <string name="settings_search_min_bitrate">Bitrate minimo (KB/s)</string>
+    <string name="settings_search_ignore_offline">Ignora stazioni offline</string>
+    <string name="settings_search_ignore_offline_desc">I flussi non erano raggiungibili per un po\' di tempo</string>
+    <string name="settings_search_secure_only">Solo flussi sicuri</string>
+    <string name="settings_search_secure_only_desc">Filtra i flussi trasmessi tramite HTTPS</string>
+    <string name="settings_search_tag_buttons">Scorciatoie di genere</string>
+    <string name="settings_search_tag_buttons_desc">Schede o pulsanti di scorciatoia nella schermata di ricerca</string>
+    <string name="settings_reorder_tags">Riordina scorciatoie</string>
+    <string name="settings_search_tag_order_desc">Cambia l\'ordine delle scorciatoie di genere</string>
+    <string name="settings_search_genre_shortcuts">Scorciatoie di genere</string>
+    <string name="settings_search_genre_cards">Schede</string>
+    <string name="settings_search_genre_buttons">Pulsanti</string>
+
+    <!-- Settings – Sort Options -->
+    <string name="settings_sort_order">Ordine di ordinamento</string>
+    <string name="settings_sort_descending">Decrescente</string>
+    <string name="settings_sort_ascending">Crescente</string>
+    <string name="settings_sort_criteria">Criterio di ordinamento</string>
+    <string name="settings_sort_votes">Voti</string>
+    <string name="settings_sort_clicks">Clic/24h</string>
+    <string name="settings_sort_country">Paese</string>
+    <string name="settings_sort_bitrate">Bitrate</string>
+
+    <!-- Settings – Appearance -->
+    <string name="settings_appearance_title">Aspetto</string>
+    <string name="settings_appearance_theme_mode">Modalità tema</string>
+    <string name="settings_appearance_light">Chiaro</string>
+    <string name="settings_appearance_dark">Scuro</string>
+    <string name="settings_appearance_system">Sistema</string>
+    <string name="settings_appearance_theme_color">Colore del tema</string>
+    <string name="settings_appearance_dynamic">Dinamico</string>
+    <string name="settings_appearance_colors">Colori</string>
+    <string name="settings_appearance_true_black">Nero assoluto</string>
+    <string name="settings_appearance_true_black_desc">Tema più scuro per display OLED</string>
+    <string name="settings_appearance_language">Lingua</string>
+    <string name="settings_appearance_language_system">Lingua del sistema</string>
+
+    <!-- Settings – Playback -->
+    <string name="settings_playback_title">Riproduzione</string>
+    <string name="settings_playback_background">Riproduzione in background</string>
+    <string name="settings_playback_background_desc">La riproduzione continua quando l\'app è chiusa</string>
+    <string name="settings_playback_resume_call">Riprendi dopo la chiamata</string>
+    <string name="settings_playback_resume_call_desc">Riprendi la riproduzione dopo la fine di una telefonata</string>
+
+    <!-- Settings – Find In -->
+    <string name="settings_find_in_title">Apri in…</string>
+    <string name="settings_find_in_show_button">Pulsante del servizio musicale</string>
+    <string name="settings_find_in_show_button_desc">Apri la canzone corrente nel tuo Spotify/Youtube Music</string>
+    <string name="settings_find_in_music_detection">Nascondi per talk &amp; notizie</string>
+    <string name="settings_find_in_music_detection_desc">Nasconde automaticamente il pulsante quando il flusso non fornisce info sulla canzone</string>
+    <string name="settings_find_in_provider">Provider musicale</string>
+
+    <!-- Settings – Favorites management -->
+    <string name="settings_favorites_title">Preferiti</string>
+    <string name="settings_favorites_create_filter">Crea filtro</string>
+    <string name="settings_favorites_create_filter_desc">Aggiungi un nuovo filtro per organizzare i preferiti</string>
+    <string name="settings_favorites_reorder_filters">Riordina filtri</string>
+    <string name="settings_favorites_reorder_filters_desc">Cambia l\'ordine o elimina i filtri</string>
+    <string name="settings_favorites_add_custom">Aggiungi stazione manualmente</string>
+    <string name="settings_favorites_add_custom_desc">Aggiungi una stazione radio tramite URL del flusso</string>
+    <string name="settings_favorites_import">Carica preferiti</string>
+    <string name="settings_favorites_import_desc">Carica i preferiti da un file</string>
+    <string name="settings_favorites_save">Salva preferiti</string>
+    <string name="settings_favorites_save_desc">Scrivi i preferiti in un file</string>
+    <string name="settings_favorites_overwrite">Sovrascrivi l\'ultimo backup</string>
+    <string name="settings_favorites_overwrite_desc">Sostituisci direttamente il file di backup precedente</string>
+    <string name="settings_favorites_delete_all">Svuota lista preferiti</string>
+    <string name="settings_favorites_delete_all_desc">Elimina tutti i preferiti dalla lista</string>
+    <string name="settings_favorites_highlight_unassigned">Evidenzia non assegnati</string>
+    <string name="settings_favorites_highlight_unassigned_desc">In modalità modifica, evidenzia le stazioni non assegnate a nessun filtro</string>
+
+    <!-- Scheduled News -->
+    <string name="scheduled_news_title">Notizie programmate</string>
+    <string name="scheduled_news_enable">Attiva pianificatore notizie</string>
+    <string name="scheduled_news_interval">Intervallo</string>
+    <string name="scheduled_news_hourly">Ogni ora</string>
+    <string name="scheduled_news_half_hourly">Ogni 30 min</string>
+    <string name="scheduled_news_duration">Durata</string>
+    <string name="scheduled_news_off">Off</string>
+    <string name="scheduled_news_minutes">%1$d min</string>
+    <string name="scheduled_news_skip">Attiva pulsante salta</string>
+    <string name="scheduled_news_skip_desc">Torna alla stazione precedente premendo il pulsante salta</string>
+
+    <!-- Settings – About -->
+    <string name="settings_about_title">Informazioni</string>
+    <string name="settings_about_app_info">Informazioni sull\'app</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_all_favorites_title">Elimina tutti i preferiti</string>
+    <string name="dialog_delete_all_favorites_message">Sei sicuro di voler eliminare tutte le tue stazioni preferite e i filtri? Questa azione non può essere annullata.</string>
+    <string name="dialog_playback_error_title">Errore di riproduzione</string>
+    <string name="dialog_playback_error_message">Impossibile riprodurre questa stazione. Il flusso potrebbe essere offline, non disponibile o non supportato da questo dispositivo.</string>
+
+    <!-- App Info -->
+    <string name="app_info_title">Informazioni</string>
+    <string name="app_info_section">Info app</string>
+    <string name="app_info_version">Versione app</string>
+    <string name="app_info_author">Autore</string>
+    <string name="app_info_radio_source">Fonte informazioni stazioni</string>
+    <string name="app_info_licenses">Licenze open source</string>
+    <string name="app_info_licenses_desc">Software di terze parti utilizzato in questa app</string>
+    <string name="app_info_licenses_title">Licenze open source</string>
+    <string name="app_info_legal_info">Informazioni legali</string>
+    <string name="app_info_legal_info_desc">Privacy, utilizzo dei dati &amp; disclaimer</string>
+
+    <!-- Language selection -->
+    <string name="language_select">Seleziona lingua</string>
+
+    <!-- Station overlay / context menu -->
+    <string name="overlay_open_homepage">Apri homepage</string>
+    <string name="overlay_share_station">Condividi link stazione</string>
+    <string name="overlay_copy_song_info">Copia info canzone</string>
+    <string name="overlay_vote">Vota per questa stazione</string>
+    <string name="overlay_vote_success">Grazie per il tuo voto!</string>
+    <string name="overlay_vote_already">Hai già votato per questa stazione</string>
+    <string name="overlay_vote_error">Impossibile inviare il voto</string>
+    <string name="overlay_scheduled_news">Notizie programmate</string>
+    <string name="overlay_find_station_icon">Trova icona stazione</string>
+    <string name="overlay_find_icon_searching">Ricerca icone…</string>
+    <string name="overlay_find_icon_pick">Tocca un\'icona per usarla</string>
+    <string name="overlay_find_icon_no_results">Nessuna icona trovata per questa stazione.</string>
+
+    <!-- Custom stream -->
+    <string name="custom_stream_title">Aggiungi flusso personalizzato</string>
+    <string name="custom_stream_name">Nome stazione</string>
+    <string name="custom_stream_url">URL flusso</string>
+    <string name="custom_stream_codec">Codec</string>
+    <string name="custom_stream_bitrate">Bitrate (kbps)</string>
+    <string name="custom_stream_tags">Tag / genere (opzionale)</string>
+    <string name="custom_stream_tags_placeholder">es. jazz, pop, classica</string>
+    <string name="custom_stream_add">Aggiungi</string>
+    <string name="custom_stream_homepage">Homepage (opzionale)</string>
+    <string name="custom_stream_country_code">Codice paese (opzionale)</string>
+    <string name="custom_stream_country_code_placeholder">es. IT o DE</string>
+    <string name="custom_stream_url_invalid">Inserisci un URL di flusso valido (deve iniziare con http)</string>
+
+    <!-- Sleep timer -->
+    <string name="sleep_timer_title">Timer sonno</string>
+    <string name="sleep_timer_duration">Durata (minuti)</string>
+    <string name="sleep_timer_start">Avvia timer</string>
+    <string name="sleep_timer_stop">Ferma timer</string>
+    <string name="sleep_timer_remaining">La radio si fermerà tra %1$d minuti</string>
+    <string name="sleep_timer_cancel_on_stop">Annulla automaticamente all\'arresto</string>
+    <string name="sleep_timer_cancel_on_stop_desc">Si reimposta se l\'audio viene interrotto o inizia una nuova stazione</string>
+
+    <!-- Legal info -->
+    <string name="legal_title">Informazioni legali</string>
+    <string name="legal_about_title">Informazioni su questa app</string>
+    <string name="legal_about_text">radioMii è un progetto software libero e open source (FOSS) creato da appassionati la cui unica motivazione è creare app utili per la comunità. Questa app è sviluppata su base non commerciale. Non abbiamo alcun interesse commerciale né alcun interesse a raccogliere, elaborare o monetizzare i tuoi dati.</string>
+    <string name="legal_privacy_title">Privacy &amp; utilizzo dei dati</string>
+    <string name="legal_privacy_text">radioMii non traccia, raccoglie né memorizza dati personali o relativi all\'utente. Nessuna analisi, nessuna telemetria, nessun profilo utente.\n\nGli unici dati memorizzati sono la lista delle stazioni preferite, conservata localmente sul tuo dispositivo. Se scegli di eseguire il backup o esportare i tuoi preferiti su Google Drive, quel trasferimento è avviato e controllato esclusivamente da te. Nessun dato viene inviato agli sviluppatori di radioMii in nessun momento.</string>
+    <string name="legal_third_party_title">Servizi di terze parti &amp; accesso alla rete</string>
+    <string name="legal_third_party_text">radioMii recupera le informazioni sulle stazioni dal database gestito dalla comunità radio-browser.info. Quando navighi o cerchi stazioni, il tuo dispositivo si connette ai server di radio-browser.info, che potrebbero vedere il tuo indirizzo IP e i metadati delle richieste.\n\nQuando ascolti una stazione radio, il tuo dispositivo si connette direttamente al server di streaming gestito dal rispettivo fornitore della stazione. Anche questi server di terze parti potrebbero vedere il tuo indirizzo IP e altri dettagli di connessione.\n\nGli sviluppatori di radioMii non hanno alcun controllo su questi servizi di terze parti.</string>
+    <string name="legal_disclaimer_title">Disclaimer sui contenuti</string>
+    <string name="legal_disclaimer_text">radioMii non ospita, non cura né controlla editorialmente alcun contenuto. Tutte le stazioni radio vengono riprodotte tramite link di flusso provenienti dal database radio-browser.info.\n\nAlcuni flussi potrebbero trasmettere contenuti con restrizioni d\'età, soggetti a requisiti di licenza o vietati dalle leggi del tuo paese o giurisdizione. L\'utente è l\'unico responsabile di garantire che il suo utilizzo dell\'app sia conforme a tutte le leggi e normative locali applicabili.</string>
+    <string name="legal_no_warranty_title">Nessuna garanzia</string>
+    <string name="legal_no_warranty_text">radioMii viene fornito "così com\'è" senza garanzia di alcun tipo, espressa o implicita. Gli sviluppatori non forniscono garanzie riguardo alla disponibilità, accuratezza o affidabilità dell\'app o di qualsiasi contenuto di terze parti accessibile tramite essa. L\'utilizzo dell\'app è interamente a proprio rischio.</string>
+
+    <!-- Network / server dialogs -->
+    <string name="dialog_no_internet_title">Nessuna connessione Internet</string>
+    <string name="dialog_no_internet_message">Controlla la connessione WiFi o alla rete mobile e riprova.</string>
+    <string name="dialog_server_unreachable_title">Server non raggiungibili</string>
+    <string name="dialog_server_unreachable_message">I server radio-browser non rispondono al momento. Puoi comunque riprodurre le tue stazioni preferite.</string>
+</resources>
+
