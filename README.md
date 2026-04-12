@@ -8,7 +8,6 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;
 [![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)&nbsp;
-[![Install with Obtainium](https://img.shields.io/badge/Install%20with-Obtainium-ff7a00?logo=android&logoColor=white)](obtainium://add?url=https://github.com/haecksenwerk/radioMii-Android)&nbsp;
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/haecksenwerk)&nbsp;
 
 **Mii** 美音 &nbsp;·&nbsp; 美 _(beautiful)_ 音 _(sound)_
@@ -38,6 +37,21 @@ Station data is sourced from the community-maintained [radio-browser.info](https
 
 ## Installation
 
+<p align="center">
+  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22:%22de.haecksenwerk.radiomii%22,%22url%22:%22https://github.com/haecksenwerk/radioMii-Android%22,%22author%22:%22haecksenwerk%22,%22name%22:%22radioMii%22%7D">
+    <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
+         alt="Get it on Obtainium" 
+         height="40"
+         style="vertical-align: middle;">
+  </a>
+  <a href="https://github.com/haecksenwerk/radioMii-Android/releases">
+    <img src="https://raw.githubusercontent.com/NeoApplications/Neo-Backup/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png" 
+         alt="Get it on GitHub" 
+         height="60"
+         style="vertical-align: middle;">
+  </a>
+</p>
+
 ### Obtainium
 
 The easiest way to install and keep radioMii up to date is via [Obtainium](https://github.com/ImranR98/Obtainium) - it fetches updates directly from GitHub Releases, no app store required.
@@ -58,6 +72,8 @@ The app‑signing certificate hash is shown in the Obtainium info screen for rad
 ### Manual download
 
 Grab the latest signed APK directly from the [Releases](https://github.com/haecksenwerk/radioMii-android/releases/latest) page.
+
+You can also verify GitHub Release APK hashes with [AppVerifier](https://github.com/soupslurpr/AppVerifier)
 
 **Minimum Android version:** Android 9 (API 28)
 
