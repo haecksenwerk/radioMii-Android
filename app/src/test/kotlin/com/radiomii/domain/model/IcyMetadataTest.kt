@@ -5,7 +5,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-// Unit tests for IcyMetadata computed properties and isMusicContent heuristic.
+// Unit tests for IcyMetadata computed properties.
 class IcyMetadataTest {
 
     @Test
@@ -66,42 +66,6 @@ class IcyMetadataTest {
     fun `display prefers title over rawTitle when artist is empty`() {
         val meta = IcyMetadata(title = "B", rawTitle = "raw")
         assertEquals("B", meta.display)
-    }
-
-    @Test
-    fun `isMusicContent returns true for hyphen-separated artist and title`() {
-        assertTrue(IcyMetadata(rawTitle = "Radiohead - Creep").isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent returns true for en-dash-separated artist and title`() {
-        assertTrue(IcyMetadata(rawTitle = "Radiohead – Creep").isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent returns false for plain text without separator`() {
-        assertFalse(IcyMetadata(rawTitle = "News at 10").isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent returns false for blank rawTitle`() {
-        assertFalse(IcyMetadata(rawTitle = "").isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent returns false for whitespace-only rawTitle`() {
-        assertFalse(IcyMetadata(rawTitle = "   ").isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent returns false for default instance`() {
-        assertFalse(IcyMetadata().isMusicContent())
-    }
-
-    @Test
-    fun `isMusicContent requires spaces around hyphen`() {
-        // "Rock-Pop" has a hyphen but no spaces → not music content
-        assertFalse(IcyMetadata(rawTitle = "Rock-Pop").isMusicContent())
     }
 }
 

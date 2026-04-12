@@ -96,9 +96,7 @@
     <string name="settings_find_in_title">Öffnen in…</string>
     <string name="settings_find_in_show_button">Musikanbieter Button</string>
     <string name="settings_find_in_show_button_desc">Öffnet aktuellen Song in Spotify/Youtube Music</string>
-    <string name="settings_find_in_music_detection">Bei Talk &amp; News ausblenden</string>
-    <string name="settings_find_in_music_detection_desc">Blendet den Button aus, wenn der Stream keine Song-Infos liefert</string>
-    <string name="settings_find_in_provider">Musikanbieter</string>
+    <string name="settings_find_in_provider">Musikdienst</string>
 
     <!-- Settings – Favorites management -->
     <string name="settings_favorites_title">Favoriten</string>

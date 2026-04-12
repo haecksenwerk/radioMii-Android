@@ -25,7 +25,6 @@ private object Keys {
     val RESUME_AFTER_CALL = booleanPreferencesKey("resume_after_call")
     val FIND_ON_PROVIDER = stringPreferencesKey("find_on_provider")
     val SHOW_FIND_ON_BUTTON = booleanPreferencesKey("show_find_on_button")
-    val USE_MUSIC_DETECTION = booleanPreferencesKey("use_music_detection")
     val SHOW_FILTER_BAR = booleanPreferencesKey("show_filter_bar")
     val HIGHLIGHT_UNASSIGNED = booleanPreferencesKey("highlight_unassigned")
     val SEARCH_OPTIONS_JSON = stringPreferencesKey("search_options_json")
@@ -102,7 +101,6 @@ class SettingsDataStore @Inject constructor(
             resumeAfterCall = prefs[Keys.RESUME_AFTER_CALL] ?: false,
             findOnProvider = MusicProvider.valueOf(prefs[Keys.FIND_ON_PROVIDER] ?: MusicProvider.SPOTIFY.name),
             showFindOnButton = prefs[Keys.SHOW_FIND_ON_BUTTON] ?: false,
-            useMusicDetection = prefs[Keys.USE_MUSIC_DETECTION] ?: true,
             showFilterBar = prefs[Keys.SHOW_FILTER_BAR] ?: true,
             highlightUnassigned = prefs[Keys.HIGHLIGHT_UNASSIGNED] ?: false,
             searchOptions = searchOpts.toDomain(),
@@ -141,7 +139,6 @@ class SettingsDataStore @Inject constructor(
     suspend fun setResumeAfterCall(enabled: Boolean) = context.dataStore.edit { it[Keys.RESUME_AFTER_CALL] = enabled }
     suspend fun setFindOnProvider(provider: MusicProvider) = context.dataStore.edit { it[Keys.FIND_ON_PROVIDER] = provider.name }
     suspend fun setShowFindOnButton(show: Boolean) = context.dataStore.edit { it[Keys.SHOW_FIND_ON_BUTTON] = show }
-    suspend fun setUseMusicDetection(use: Boolean) = context.dataStore.edit { it[Keys.USE_MUSIC_DETECTION] = use }
     suspend fun setShowFilterBar(show: Boolean) = context.dataStore.edit { it[Keys.SHOW_FILTER_BAR] = show }
     suspend fun setHighlightUnassigned(enabled: Boolean) = context.dataStore.edit { it[Keys.HIGHLIGHT_UNASSIGNED] = enabled }
     suspend fun setSleepTimerMinutes(minutes: Int) = context.dataStore.edit { it[Keys.SLEEP_TIMER_MINUTES] = minutes }

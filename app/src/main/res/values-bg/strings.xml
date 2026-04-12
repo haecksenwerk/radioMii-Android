@@ -96,9 +96,7 @@
     <string name="settings_find_in_title">Отвори в…</string>
     <string name="settings_find_in_show_button">Покажи бутон в разширен плейър</string>
     <string name="settings_find_in_show_button_desc">Отвори текущата песен в стрийминг услугата</string>
-    <string name="settings_find_in_music_detection">Скриване за говор &amp; новини</string>
-    <string name="settings_find_in_music_detection_desc">Автоматично скрива бутона, когато потокът не предоставя информация за песен</string>
-    <string name="settings_find_in_provider">Доставчик на музика</string>
+    <string name="settings_find_in_provider">Музикална услуга</string>
 
     <!-- Settings – Favorites management -->
     <string name="settings_favorites_title">Любими</string>

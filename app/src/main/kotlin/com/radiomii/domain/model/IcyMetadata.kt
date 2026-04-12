@@ -14,8 +14,3 @@ data class IcyMetadata(
     }
 }
 
-// Heuristic: checks for "Artist - Title" or "Artist – Title" pattern.
-fun IcyMetadata.isMusicContent(): Boolean {
-    if (rawTitle.isBlank()) return false
-    return rawTitle.contains(" - ") || rawTitle.contains(" – ")
-}

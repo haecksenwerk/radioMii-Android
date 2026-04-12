@@ -15,7 +15,6 @@ data class AppSettings(
     val resumeAfterCall: Boolean = false,
     val findOnProvider: MusicProvider = MusicProvider.SPOTIFY,
     val showFindOnButton: Boolean = true,
-    val useMusicDetection: Boolean = true,
     val showFilterBar: Boolean = true,
     val highlightUnassigned: Boolean = false,
     val searchOptions: SearchOptions = SearchOptions(),

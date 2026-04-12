@@ -36,7 +36,6 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.radiomii.R
 import com.radiomii.domain.model.MusicProvider
-import com.radiomii.domain.model.isMusicContent
 import com.radiomii.ui.components.SleepTimerButton
 import com.radiomii.ui.components.StationIcon
 import com.radiomii.ui.AppViewModel
@@ -163,8 +162,7 @@ fun NowPlayingSheet(
                             val showFindOn = settings.showFindOnButton &&
                                 metadata != null &&
                                 metadata!!.hasContent &&
-                                isPlaying &&
-                                (!settings.useMusicDetection || metadata!!.isMusicContent())
+                                isPlaying
                             if (showFindOn) {
                                 IconButton(onClick = {
                                     val artist = metadata!!.artist

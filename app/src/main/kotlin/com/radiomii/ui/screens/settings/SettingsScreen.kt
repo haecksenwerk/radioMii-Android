@@ -29,7 +29,6 @@ import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.core.tween
 import androidx.compose.material.icons.outlined.AdsClick
-import androidx.compose.material.icons.outlined.ArrowCircleRight
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.FilterAlt
 import androidx.compose.material.icons.outlined.FolderOpen
@@ -673,26 +672,13 @@ fun SettingsScreen(
                         onCheckedChange = { viewModel.setShowFindOnButton(it) },
                         leadingIcon = {
                             Icon(
-                                imageVector = Icons.Outlined.ArrowCircleRight,
+                                imageVector = Icons.Default.MusicNote,
                                 contentDescription = null,
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                             )
                         },
                     )
                     if (settings.showFindOnButton) {
-                        SwitchRow(
-                            title = stringResource(R.string.settings_find_in_music_detection),
-                            subtitle = stringResource(R.string.settings_find_in_music_detection_desc),
-                            checked = settings.useMusicDetection,
-                            onCheckedChange = { viewModel.setUseMusicDetection(it) },
-                            leadingIcon = {
-                                Icon(
-                                    imageVector = Icons.Default.MusicNote,
-                                    contentDescription = null,
-                                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                                )
-                            },
-                        )
                         SegmentedButtonRow(
                             title = stringResource(R.string.settings_find_in_provider),
                             options = MusicProvider.entries,

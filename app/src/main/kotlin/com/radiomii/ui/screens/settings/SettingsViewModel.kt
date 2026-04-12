@@ -81,7 +81,6 @@ class SettingsViewModel @Inject constructor(
     fun setBackgroundPlayback(enabled: Boolean) = viewModelScope.launch { store.setBackgroundPlayback(enabled) }
     fun setResumeAfterCall(enabled: Boolean) = viewModelScope.launch { store.setResumeAfterCall(enabled) }
     fun setShowFindOnButton(enabled: Boolean) = viewModelScope.launch { store.setShowFindOnButton(enabled) }
-    fun setUseMusicDetection(enabled: Boolean) = viewModelScope.launch { store.setUseMusicDetection(enabled) }
     fun setFindOnProvider(provider: MusicProvider) = viewModelScope.launch { store.setFindOnProvider(provider) }
 
     // Favorites

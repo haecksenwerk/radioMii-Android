@@ -96,8 +96,6 @@
     <string name="settings_find_in_title">Open in…</string>
     <string name="settings_find_in_show_button">Music service button</string>
     <string name="settings_find_in_show_button_desc">Open current song in Spotify/Youtube Music</string>
-    <string name="settings_find_in_music_detection">Hide for talk &amp; news</string>
-    <string name="settings_find_in_music_detection_desc">Automatically hides the button when the stream shows no song info</string>
     <string name="settings_find_in_provider">Music service</string>
 
     <!-- Settings – Favorites management -->

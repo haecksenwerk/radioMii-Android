@@ -96,9 +96,7 @@
     <string name="settings_find_in_title">Ouvrir dans…</string>
     <string name="settings_find_in_show_button">Bouton de service musical</string>
     <string name="settings_find_in_show_button_desc">Ouvrir la chanson en cours dans Spotify/Youtube Music</string>
-    <string name="settings_find_in_music_detection">Masquer pour parole &amp; info</string>
-    <string name="settings_find_in_music_detection_desc">Masque automatiquement le bouton lorsque le flux ne fournit aucune info sur la chanson</string>
-    <string name="settings_find_in_provider">Fournisseur de musique</string>
+    <string name="settings_find_in_provider">Service musical</string>
 
     <!-- Settings – Favorites management -->
     <string name="settings_favorites_title">Favoris</string>

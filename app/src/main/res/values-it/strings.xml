@@ -96,9 +96,7 @@
     <string name="settings_find_in_title">Apri in…</string>
     <string name="settings_find_in_show_button">Pulsante del servizio musicale</string>
     <string name="settings_find_in_show_button_desc">Apri la canzone corrente nel tuo Spotify/Youtube Music</string>
-    <string name="settings_find_in_music_detection">Nascondi per talk &amp; notizie</string>
-    <string name="settings_find_in_music_detection_desc">Nasconde automaticamente il pulsante quando il flusso non fornisce info sulla canzone</string>
-    <string name="settings_find_in_provider">Provider musicale</string>
+    <string name="settings_find_in_provider">Servizio musicale</string>
 
     <!-- Settings – Favorites management -->
     <string name="settings_favorites_title">Preferiti</string>
