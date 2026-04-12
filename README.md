@@ -1,8 +1,10 @@
+<br />
 <p align="center" style="margin-top: 20px; margin-bottom: 40px;">
-  <img src="app/src/main/res/drawable/logo_dm.png"
+  <img src="app/src/main/res/drawable/logo_lm.png"
        alt="radioMii Logo"
        width="180">
 </p>
+<br />
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)
