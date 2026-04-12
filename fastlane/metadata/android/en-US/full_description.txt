@@ -1,0 +1,24 @@
+radioMii — 美音 · beautiful sound
+
+A modern Android app for browsing and playing internet radio streams, built with Kotlin and Jetpack Compose (Material 3).
+
+Station data is sourced from the community-maintained radio-browser.info database, enabling fast and efficient station discovery through server-side filtering.
+
+Features:
+
+• Search &amp; discover — browse thousands of stations from around the world, filtered directly on the server for quick results.
+
+• Favorites — save your preferred stations to a personal list for instant access.
+
+• Genre filtering — define your own genres and use them to filter your favorites, giving you full control over how you organize your radio experience.
+
+• News scheduler — when enabled for a station, the player automatically switches to it every half or full hour for 5 or 10 minutes, then seamlessly returns to whatever you were listening to before.
+
+• Sleep timer — set a timer to stop playback automatically after a chosen duration.
+
+• Clean, modern UI — built with Material 3 and Jetpack Compose for a smooth and responsive experience.
+
+Available in English, German, French, and Italian.
+
+Minimum Android version: Android 9 (API 28)
+

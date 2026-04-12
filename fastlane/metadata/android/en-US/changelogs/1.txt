@@ -1,0 +1,10 @@
+Initial release (v0.9.0)
+
+• Browse and play internet radio stations powered by radio-browser.info
+• Save stations to a personal favorites list
+• Filter favorites by freely definable genres
+• News scheduler: auto-switch to a chosen station every half or full hour
+• Sleep timer for timed playback
+• Material 3 UI with Jetpack Compose
+• Available in English, German, French, and Italian
+
