@@ -4,7 +4,7 @@
        alt="radioMii Logo"
        width="180">
 </p>
-
+<br />
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;
 [![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)&nbsp;
@@ -56,7 +56,7 @@ The app‑signing certificate hash is shown in the Obtainium info screen for rad
 ```
 <br />
 <p align="center">
-  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22:%22de.haecksenwerk.radiomii%22,%22url%22:%22https://github.com/haecksenwerk/radioMii-Android%22,%22author%22:%22haecksenwerk%22,%22name%22:%22radioMii%22%7D">
+  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22:%22com.radiomii%22,%22url%22:%22https://github.com/haecksenwerk/radioMii-Android%22,%22author%22:%22haecksenwerk%22,%22name%22:%22radioMii%22%7D">
     <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
          alt="Get it on Obtainium" 
          height="40"
