@@ -1,7 +1,7 @@
 <p align="center" style="margin-top: 20px; margin-bottom: 40px;">
   <img src="app/src/main/res/drawable/logo_dm.png"
        alt="radioMii Logo"
-       width="180"
+       width="180">
 </p>
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -16,20 +16,20 @@ Station data is sourced from the community-maintained [radio-browser.info](https
 
 ---
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+<p align="center">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/search_cards.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/favorites.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/now_playing_sheet.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/news_scheduler.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/settings_1.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/settings_2.png"
-       alt="" style="width: 180px; margin: 16px; border-radius: 28px;">
-</div>
+       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+</p>
 
 ---
 
