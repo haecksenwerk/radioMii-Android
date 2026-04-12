@@ -31,8 +31,8 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.radiomii.R
 import com.radiomii.domain.model.Station
-import com.radiomii.domain.model.ThemeMode
 import com.radiomii.ui.components.FavoriteRow
+import com.radiomii.ui.theme.isEffectiveDarkTheme
 import com.radiomii.ui.components.FilterChipsRow
 import com.radiomii.ui.AppViewModel
 import kotlinx.coroutines.launch
@@ -138,7 +138,7 @@ fun FavoritesScreen(
                 title = {
                     Image(
                         painter = painterResource(
-                            if (settings.themeMode == ThemeMode.LIGHT) R.drawable.logo_lm else R.drawable.logo_dm
+                            if (!isEffectiveDarkTheme(settings.themeMode)) R.drawable.logo_lm else R.drawable.logo_dm
                         ),
                         contentDescription = stringResource(R.string.nav_favorites),
                         modifier = Modifier.height(28.dp),
