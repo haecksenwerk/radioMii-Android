@@ -6,9 +6,10 @@
 </p>
 <br />
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/haecksenwerk)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;
+[![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)&nbsp;
+[![Install with Obtainium](https://img.shields.io/badge/Install%20with-Obtainium-ff7a00?logo=android&logoColor=white)](obtainium://add?url=https://github.com/haecksenwerk/radioMii-Android)&nbsp;
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/haecksenwerk)&nbsp;
 
 **Mii** 美音 &nbsp;·&nbsp; 美 _(beautiful)_ 音 _(sound)_
 
@@ -20,17 +21,17 @@ Station data is sourced from the community-maintained [radio-browser.info](https
 
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/search_cards.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/favorites.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/now_playing_sheet.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/news_scheduler.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/settings_1.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/settings_2.png"
-       alt="" width="180" style="margin: 12px; border-radius: 24px;">
+       alt="" width="180">&nbsp;&nbsp;
 </p>
 
 ---
