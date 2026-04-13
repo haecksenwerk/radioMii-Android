@@ -6,7 +6,7 @@
 </p>
 <br />
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)&nbsp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;
 [![Release](https://img.shields.io/github/v/release/haecksenwerk/radioMii-android)](https://github.com/haecksenwerk/radioMii-android/releases/latest)&nbsp;
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/haecksenwerk)&nbsp;
 
@@ -83,4 +83,4 @@ If you enjoy radioMii, consider buying me a coffee to maintain my hobby-fuel lev
 
 ## License
 
-[GNU General Public License v3.0](LICENSE)
+[MIT License](https://opensource.org/licenses/MIT)
