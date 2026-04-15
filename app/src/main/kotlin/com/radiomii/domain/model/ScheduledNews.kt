@@ -11,7 +11,7 @@ data class ScheduledNews(
     val stationName: String = "",
     val interval: String = NewsInterval.HOURLY.name,   // serialized as String for DataStore
     val durationMinutes: Int = 5,  // 0 = play until manually stopped
-    val skipWhenPaused: Boolean = false,
+    val showSkipButton: Boolean = false,
 ) {
     val intervalEnum: NewsInterval get() = NewsInterval.valueOf(interval)
 }

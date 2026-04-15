@@ -25,7 +25,7 @@ fun NewsScheduleDialog(
     var enabled by remember(scheduledNews.enabled) { mutableStateOf(scheduledNews.enabled) }
     var interval by remember(scheduledNews.interval) { mutableStateOf(scheduledNews.intervalEnum) }
     var durationMinutes by remember(scheduledNews.durationMinutes) { mutableIntStateOf(scheduledNews.durationMinutes) }
-    var skipWhenPaused by remember(scheduledNews.skipWhenPaused) { mutableStateOf(scheduledNews.skipWhenPaused) }
+    var showSkipButton by remember(scheduledNews.showSkipButton) { mutableStateOf(scheduledNews.showSkipButton) }
     val stationId = scheduledNews.stationId
     val stationName = scheduledNews.stationName
 
@@ -100,7 +100,7 @@ fun NewsScheduleDialog(
                                         selected = durationMinutes == dur,
                                         onClick = {
                                             durationMinutes = dur
-                                            if (dur == 0) skipWhenPaused = false
+                                            if (dur == 0) showSkipButton = false
                                         },
                                         shape = SegmentedButtonDefaults.itemShape(index = index, count = durations.size),
                                         icon = {},
@@ -123,7 +123,7 @@ fun NewsScheduleDialog(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .clickable(enabled = durationMinutes > 0) {
-                                    if (durationMinutes > 0) skipWhenPaused = !skipWhenPaused
+                                                                        if (durationMinutes > 0) showSkipButton = !showSkipButton
                                 }
                                 .padding(vertical = 4.dp),
                         ) {
@@ -144,8 +144,8 @@ fun NewsScheduleDialog(
                                 )
                             }
                             Switch(
-                                checked = skipWhenPaused,
-                                onCheckedChange = { if (durationMinutes > 0) skipWhenPaused = it },
+                                checked = showSkipButton,
+                                onCheckedChange = { if (durationMinutes > 0) showSkipButton = it },
                                 enabled = durationMinutes > 0,
                             )
                         }
@@ -164,7 +164,7 @@ fun NewsScheduleDialog(
                             stationName = stationName,
                             interval = interval.name,
                             durationMinutes = durationMinutes,
-                            skipWhenPaused = skipWhenPaused,
+                            showSkipButton = showSkipButton,
                         ),
                     )
                 },

@@ -66,7 +66,7 @@ fun NowPlayingSheet(
     val isNewsStation = settings.scheduledNews.enabled &&
         settings.scheduledNews.stationId == station?.stationuuid
     val isPlayingNews by viewModel.isPlayingNews.collectAsStateWithLifecycle()
-    val showSkipButton = isPlayingNews && settings.scheduledNews.skipWhenPaused
+    val showSkipButton = isPlayingNews && settings.scheduledNews.showSkipButton
 
     val snackbarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()

@@ -43,8 +43,8 @@ class ScheduledNewsTest {
     }
 
     @Test
-    fun `skipWhenPaused defaults to false`() {
-        assertFalse(ScheduledNews().skipWhenPaused)
+    fun `showSkipButton defaults to false`() {
+        assertFalse(ScheduledNews().showSkipButton)
     }
 }
 

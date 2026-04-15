@@ -82,7 +82,7 @@ fun AppNavHost(appViewModel: AppViewModel) {
                         isLoading = isLoading,
                         metadata = metadata,
                         sleepTimerState = sleepTimer,
-                        showSkipNews = isPlayingNews && settings.scheduledNews.skipWhenPaused,
+                        showSkipNews = isPlayingNews && settings.scheduledNews.showSkipButton,
                         onSkipNews = appViewModel::skipCurrentNews,
                         onTogglePlayPause = appViewModel::togglePlayPause,
                         onTap = { showNowPlaying = true },

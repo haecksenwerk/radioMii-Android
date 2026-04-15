@@ -155,7 +155,11 @@ class AppViewModel @Inject constructor(
         scheduledNewsManager.cancelNewsMode()
         playerController.playStation(station)
     }
-    fun togglePlayPause() = playerController.togglePlayPause()
+    fun togglePlayPause() {
+        // Cancel news mode first so the returnJob is stopped before the player halts.
+        scheduledNewsManager.cancelNewsMode()
+        playerController.togglePlayPause()
+    }
     fun skipCurrentNews() = scheduledNewsManager.skipCurrentNews()
     fun startSleepTimer(minutes: Int, cancelOnStop: Boolean = false) = sleepTimerManager.start(minutes, cancelOnStop)
     fun resetSleepTimer() = sleepTimerManager.reset()

@@ -28,24 +28,17 @@ internal fun msUntilNextInterval(
     val millis = now.get(Calendar.MILLISECOND)
     val currentMs = (seconds * 1000 + millis).toLong()
 
-    return if (interval == NewsInterval.HOURLY) {
-        val minutesUntilHour = 60 - minutes
-        minutesUntilHour * 60_000L - currentMs
-    } else {
-        // Half-hourly: next :00 or :30
-        if (minutes < 30) {
-            val until30 = 30 - minutes
-            until30 * 60_000L - currentMs
-        } else {
-            val untilHour = 60 - minutes
-            untilHour * 60_000L - currentMs
-        }
+    val intervalMinutes = when (interval) {
+        NewsInterval.HOURLY      -> 60
+        NewsInterval.HALF_HOURLY -> 30
     }
+    val minutesUntil = intervalMinutes - (minutes % intervalMinutes)
+    return minutesUntil * 60_000L - currentMs
 }
 
 // Switches to the configured news station at each interval boundary (hour or half-hour),
 // then returns to the previous station after durationMinutes (if > 0).
-// When skipWhenPaused is true, the switch is deferred until the user resumes.
+// When showSkipButton is true, the play/stop button is replaced by a skip icon during news.
 @Singleton
 class ScheduledNewsManager @Inject constructor(
     private val playerController: PlayerController,
@@ -121,7 +114,8 @@ class ScheduledNewsManager @Inject constructor(
             return
         }
 
-        if (!isPlaying && news.skipWhenPaused) {
+        // Never start playback from a stopped state, regardless of showSkipButton.
+        if (!isPlaying) {
             reschedule(news)
             return
         }
@@ -150,7 +144,7 @@ class ScheduledNewsManager @Inject constructor(
         _isPlayingNews.value = false
         val prev = previousStation
         previousStation = null
-        if (prev != null) {
+        if (prev != null && playerController.isPlaying.value) {
             scope.launch(Dispatchers.Main) {
                 playerController.playStation(prev)
             }
