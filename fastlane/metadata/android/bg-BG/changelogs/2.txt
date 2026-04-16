@@ -1,0 +1,5 @@
+• Add "Name" as a new sorting option for station searches
+• Improved scheduled news logic and skip button visibility
+• Switch license to MIT
+• Added localized store metadata and descriptions
+• General improvements and bug fixes

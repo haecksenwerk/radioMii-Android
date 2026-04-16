@@ -21,7 +21,7 @@ What you expected to happen.
 What actually happens.
 
 ## Environment
-- **App version:** (e.g. 0.9.0)
+- **App version:** (e.g. 0.9.1)
 - **Android version:** (e.g. Android 14)
 - **Device:** (e.g. Pixel 7)
 

@@ -18,8 +18,8 @@ android {
         applicationId = "com.radiomii"
         minSdk = 28
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.9.0"
+        versionCode = 2
+        versionName = "0.9.1"
         buildConfigField("String", "GIT_HASH", "\"$gitHash\"")
     }
 
