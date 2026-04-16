@@ -109,6 +109,18 @@ class FavoritesDataStore @Inject constructor(
         }
     }
 
+    /** Persists a user-defined display name. Pass null or blank to reset to the original name. */
+    suspend fun updateStationName(uuid: String, customName: String?) {
+        val normalized = customName?.ifBlank { null }
+        store.updateData { current ->
+            current.copy(
+                stations = current.stations.map {
+                    if (it.stationuuid == uuid) it.copy(customName = normalized) else it
+                }
+            )
+        }
+    }
+
     // Returns false if the filter limit is reached or name already exists.
     suspend fun createFilter(name: String): Boolean {
         var created = false

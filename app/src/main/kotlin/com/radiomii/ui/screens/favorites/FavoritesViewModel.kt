@@ -2,6 +2,7 @@ package com.radiomii.ui.screens.favorites
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.radiomii.data.player.PlayerController
 import com.radiomii.data.repository.FavoritesRepository
 import com.radiomii.domain.model.Station
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -14,6 +15,7 @@ import javax.inject.Inject
 @HiltViewModel
 class FavoritesViewModel @Inject constructor(
     private val favoritesRepository: FavoritesRepository,
+    private val playerController: PlayerController,
 ) : ViewModel() {
 
     val favorites: StateFlow<List<Station>> = favoritesRepository.favoritesFlow
@@ -48,6 +50,15 @@ class FavoritesViewModel @Inject constructor(
     fun toggleStationFilter(stationuuid: String, filterName: String) {
         viewModelScope.launch {
             favoritesRepository.toggleStationFilter(stationuuid, filterName)
+        }
+    }
+
+    /** Persists a custom display name and updates the in-memory active station so
+     *  NowPlayingBar and NowPlayingSheet reflect the change immediately. */
+    fun updateStationName(stationuuid: String, customName: String?) {
+        viewModelScope.launch { favoritesRepository.updateStationName(stationuuid, customName) }
+        if (playerController.activeStation.value?.stationuuid == stationuuid) {
+            playerController.updateStationName(customName)
         }
     }
 

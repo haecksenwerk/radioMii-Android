@@ -50,7 +50,7 @@ fun NowPlayingBar(
         ) {
             StationIcon(
                 url = station.favicon,
-                contentDescription = station.name,
+                contentDescription = station.displayName,
                 modifier = Modifier
                     .padding(start = 8.dp, top = 8.dp, bottom = 8.dp, end = 12.dp)
                     .size(44.dp),
@@ -64,7 +64,7 @@ fun NowPlayingBar(
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                 ) {
                     Text(
-                        text = station.name,
+                        text = station.displayName,
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.SemiBold,
                         maxLines = 1,
@@ -79,7 +79,7 @@ fun NowPlayingBar(
                 }
             } else {
                 Text(
-                    text = station.name,
+                    text = station.displayName,
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.SemiBold,
                     maxLines = 1,

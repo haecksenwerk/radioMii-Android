@@ -31,6 +31,7 @@ fun SearchRow(
     modifier: Modifier = Modifier,
     showVotesClicks: Boolean = true,
     activeSortOrder: SortOrder? = null,
+    displayName: String = station.displayName,
 ) {
     Surface(
         modifier = modifier
@@ -53,14 +54,14 @@ fun SearchRow(
             ) {
                 StationIcon(
                     url = station.favicon,
-                    contentDescription = station.name,
+                    contentDescription = displayName,
                     size = 50.dp,
                     modifier = Modifier.padding(end = 12.dp),
                 )
 
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = station.name,
+                        text = displayName,
                         style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.SemiBold,
                         maxLines = 1,
@@ -128,20 +129,20 @@ fun FavoriteRow(
                         imageVector = Icons.Default.DragHandle,
                         contentDescription = "Drag to reorder",
                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                        modifier = dragHandleModifier.padding(end = 4.dp),
+                        modifier = dragHandleModifier.padding(end = 12.dp),
                     )
                 }
 
                 StationIcon(
                     url = station.favicon,
-                    contentDescription = station.name,
+                    contentDescription = station.displayName,
                     size = if (isCompact) 44.dp else 50.dp,
                     modifier = Modifier.padding(end = 12.dp),
                 )
 
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = station.name,
+                        text = station.displayName,
                         style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.SemiBold,
                         maxLines = 1,

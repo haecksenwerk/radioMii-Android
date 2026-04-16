@@ -317,7 +317,7 @@ fun NowPlayingSheet(
                         else 200.dp
                         StationIcon(
                             url = station?.favicon ?: "",
-                            contentDescription = station?.name,
+                            contentDescription = station?.displayName,
                             size = imageSize,
                         )
                     }
@@ -325,7 +325,7 @@ fun NowPlayingSheet(
                     Spacer(Modifier.height(40.dp))
 
                     Text(
-                        text = station?.name ?: stringResource(R.string.common_live_radio),
+                        text = station?.displayName ?: stringResource(R.string.common_live_radio),
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
                         textAlign = TextAlign.Start,
@@ -455,7 +455,7 @@ fun NowPlayingSheet(
                 enabled = settings.scheduledNews.enabled &&
                     settings.scheduledNews.stationId == s.stationuuid,
                 stationId = s.stationuuid,
-                stationName = s.name,
+                stationName = s.displayName,
             )
             NewsScheduleDialog(
                 scheduledNews = newsForStation,

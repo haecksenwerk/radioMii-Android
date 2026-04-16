@@ -122,7 +122,15 @@ class NowPlayingViewModel @Inject constructor(
         _iconSearchState.value = IconSearchState.Idle
     }
 
-    /** Resets the icon search state (e.g. when dialog is dismissed). */
+    /** Persists a custom display name and updates the in-memory active station so NowPlayingBar / Sheet react immediately. */
+    fun updateStationName(stationUuid: String, customName: String?) {
+        viewModelScope.launch {
+            favoritesRepository.updateStationName(stationUuid, customName)
+        }
+        if (activeStation.value?.stationuuid == stationUuid) {
+            playerController.updateStationName(customName)
+        }
+    }    /** Resets the icon search state (e.g. when dialog is dismissed). */
     fun resetIconSearch() {
         _iconSearchState.value = IconSearchState.Idle
     }

@@ -98,7 +98,7 @@ class PlayerController @Inject constructor(
             .setUri(station.streamUrl)
             .setMediaMetadata(
                 MediaMetadata.Builder()
-                    .setTitle(station.name)
+                    .setTitle(station.displayName)
                     .setArtist("")
                     .setArtworkUri(
                         if (station.favicon.isNotBlank()) station.favicon.toUri() else null
@@ -112,6 +112,12 @@ class PlayerController @Inject constructor(
             it.prepare()
             it.play()
         }
+    }
+
+    // Updates the custom display name of the active station in memory so NowPlayingBar / Sheet
+    // re-render immediately without waiting for the next stream start.
+    fun updateStationName(customName: String?) {
+        _activeStation.value = _activeStation.value?.copy(customName = customName?.ifBlank { null })
     }
 
     // Restores the last active station without starting playback.
@@ -184,7 +190,7 @@ class PlayerController @Inject constructor(
                             .setUri(station.streamUrl)
                             .setMediaMetadata(
                                 MediaMetadata.Builder()
-                                    .setTitle(station.name)
+                                    .setTitle(station.displayName)
                                     .setArtist("")
                                     .setArtworkUri(
                                         if (station.favicon.isNotBlank()) station.favicon.toUri() else null

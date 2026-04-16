@@ -28,6 +28,10 @@ class FavoritesRepository @Inject constructor(
     suspend fun updateFavicon(uuid: String, faviconUrl: String) =
         store.updateFavicon(uuid, faviconUrl)
 
+    /** Persists a user-defined display name. Null or blank resets to the original name. */
+    suspend fun updateStationName(uuid: String, customName: String?) =
+        store.updateStationName(uuid, customName)
+
     // Returns false if the filter limit is reached or name already exists.
     suspend fun createFilter(name: String): Boolean = store.createFilter(name)
 

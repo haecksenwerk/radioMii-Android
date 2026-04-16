@@ -25,8 +25,12 @@ data class Station(
     val state: String = "",
     val language: String = "",
     val isCustom: Boolean = false,
+    val customName: String? = null,
 ) {
     val streamUrl: String get() = urlResolved.ifBlank { url }
+
+    /** Returns the user-defined name if set, otherwise the original station name. */
+    val displayName: String get() = customName?.ifBlank { null } ?: name
 
     @Transient
     val tagList: ImmutableList<String> = tags.split(",").map { it.trim() }.filter { it.isNotEmpty() }.toImmutableList()

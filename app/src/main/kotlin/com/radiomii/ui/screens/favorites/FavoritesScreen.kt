@@ -407,6 +407,7 @@ fun FavoritesScreen(
             assignedFilters = assignedFilters,
             onToggle = { filterName -> viewModel.toggleStationFilter(station.stationuuid, filterName) },
             onDismiss = { stationForAssignFilter.value = null },
+            onRenameStation = { newName -> viewModel.updateStationName(station.stationuuid, newName) },
         )
     }
 }

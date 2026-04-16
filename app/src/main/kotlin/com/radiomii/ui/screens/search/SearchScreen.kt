@@ -275,9 +275,11 @@ fun SearchScreen(
                         modifier = Modifier.fillMaxSize(),
                     ) {
                         itemsIndexed(results, key = { _, s -> s.stationuuid }) { _, station ->
+                            val favMatch = favorites.find { it.stationuuid == station.stationuuid }
                             SearchRow(
                                 station = station,
-                                isFavorite = favorites.any { it.stationuuid == station.stationuuid },
+                                isFavorite = favMatch != null,
+                                displayName = favMatch?.displayName ?: station.name,
                                 onClick = {
                                     appViewModel.play(station)
                                     onStationClick(station)

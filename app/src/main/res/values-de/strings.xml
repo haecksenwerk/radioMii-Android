@@ -37,6 +37,7 @@
     <string name="favorites_create_filter_hint">Tipp: Weise Sender zu, indem du im Bearbeitungsmodus nach rechts wischst.</string>
     <string name="favorites_duplicate_filter">Ein Filter mit diesem Namen existiert bereits.</string>
     <string name="favorites_assign_filter">Filter zuweisen</string>
+    <string name="favorites_station_name_length_hint">%1$d/%2$d – Name ist recht lang</string>
     <string name="favorites_no_filters">Noch keine Filter erstellt. Erstelle einen in den Einstellungen.</string>
     <string name="favorites_no_filters_snackbar">Noch keine Filter-Chips — erstelle zuerst einen in den Einstellungen</string>
     <string name="favorites_delete_filter">Filter löschen</string>
