@@ -70,6 +70,7 @@
     <string name="settings_sort_clicks">Klicks/24h</string>
     <string name="settings_sort_country">Land</string>
     <string name="settings_sort_bitrate">Bitrate</string>
+    <string name="settings_sort_name">Name</string>
 
     <!-- Settings – Appearance -->
     <string name="settings_appearance_title">Erscheinungsbild</string>

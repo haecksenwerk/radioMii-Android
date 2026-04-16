@@ -70,6 +70,7 @@
     <string name="settings_sort_clicks">Clic/24h</string>
     <string name="settings_sort_country">Paese</string>
     <string name="settings_sort_bitrate">Bitrate</string>
+    <string name="settings_sort_name">Nome</string>
 
     <!-- Settings – Appearance -->
     <string name="settings_appearance_title">Aspetto</string>

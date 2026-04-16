@@ -123,7 +123,8 @@ class SettingsViewModel @Inject constructor(
     fun setSearchCountry(country: String) = updateSearchOptions { copy(country = country) }
     fun setSearchBitrateMin(bitrate: Int) = updateSearchOptions { copy(bitrateMin = bitrate) }
     fun setSearchSortOrder(order: SortOrder) = updateSearchOptions {
-        copy(sortOrder = order, reverse = order != SortOrder.COUNTRY)
+        val defaultReverse = order != SortOrder.COUNTRY && order != SortOrder.NAME
+        copy(sortOrder = order, reverse = defaultReverse)
     }
     fun setSearchReverse(reverse: Boolean) = updateSearchOptions { copy(reverse = reverse) }
 

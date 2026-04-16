@@ -6,6 +6,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.radiomii.R
 import com.radiomii.domain.model.SleepTimerState
@@ -85,6 +86,7 @@ fun SleepTimerDialog(
                         Text(
                             text = stringResource(R.string.sleep_timer_cancel_on_stop),
                             style = MaterialTheme.typography.bodyMedium,
+                            fontWeight = FontWeight.Medium
                         )
                         Spacer(Modifier.height(4.dp))
                         Text(

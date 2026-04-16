@@ -8,6 +8,7 @@ enum class SortOrder(val apiValue: String) {
     VOTES("votes"),
     COUNTRY("country"),
     BITRATE("bitrate"),
+    NAME("name"),
 }
 
 val DEFAULT_TAG_LIST = listOf(

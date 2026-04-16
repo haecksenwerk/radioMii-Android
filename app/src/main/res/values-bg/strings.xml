@@ -70,6 +70,7 @@
     <string name="settings_sort_clicks">Кликвания/24ч</string>
     <string name="settings_sort_country">Държава</string>
     <string name="settings_sort_bitrate">Битрейт</string>
+    <string name="settings_sort_name">Име</string>
 
     <!-- Settings – Appearance -->
     <string name="settings_appearance_title">Външен вид</string>

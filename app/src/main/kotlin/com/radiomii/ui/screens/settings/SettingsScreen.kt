@@ -222,6 +222,7 @@ fun SettingsScreen(
                                 SortOrder.CLICK_COUNT -> stringResource(R.string.settings_sort_clicks)
                                 SortOrder.COUNTRY -> stringResource(R.string.settings_sort_country)
                                 SortOrder.BITRATE -> stringResource(R.string.settings_sort_bitrate)
+                                SortOrder.NAME -> stringResource(R.string.settings_sort_name)
                             }
                         },
                         iconOf = { order ->
@@ -230,6 +231,7 @@ fun SettingsScreen(
                                 SortOrder.CLICK_COUNT -> Icon(Icons.Outlined.AdsClick, null, Modifier.size(SegmentedButtonDefaults.IconSize))
                                 SortOrder.COUNTRY -> Icon(Icons.Default.Public, null, Modifier.size(SegmentedButtonDefaults.IconSize))
                                 SortOrder.BITRATE -> Text("KB/s", style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold)
+                                SortOrder.NAME -> Icon(Icons.Default.SortByAlpha, null, Modifier.size(SegmentedButtonDefaults.IconSize))
                             }
                         },
                     )
@@ -932,5 +934,3 @@ private fun LanguagePickerDialog(
         }
     )
 }
-
-// Country picker dialog and flag emoji helper moved to `CountryPickerDialog.kt`.

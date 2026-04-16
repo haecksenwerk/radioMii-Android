@@ -70,6 +70,7 @@
     <string name="settings_sort_clicks">Clics/24h</string>
     <string name="settings_sort_country">Pays</string>
     <string name="settings_sort_bitrate">Débit</string>
+    <string name="settings_sort_name">Nom</string>
 
     <!-- Settings – Appearance -->
     <string name="settings_appearance_title">Apparence</string>

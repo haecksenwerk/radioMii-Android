@@ -28,6 +28,11 @@ class SearchOptionsTest {
     }
 
     @Test
+    fun `NAME maps to name`() {
+        assertEquals("name", SortOrder.NAME.apiValue)
+    }
+
+    @Test
     fun `every SortOrder entry has a non-blank apiValue`() {
         SortOrder.entries.forEach { order ->
             assert(order.apiValue.isNotBlank()) {
