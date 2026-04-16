@@ -1,1 +1,1 @@
-Browse and play internet radio streams with a clean Material 3 interface.
+A modern Material 3 app for browsing and listening to internet radio streams.

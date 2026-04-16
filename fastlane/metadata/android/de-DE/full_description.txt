@@ -1,0 +1,24 @@
+radioMii — 美音 · beautiful sound
+
+Eine moderne Android-App zum Suchen und Abspielen von Internetradiosendern, entwickelt mit Kotlin und Jetpack Compose (Material 3).
+
+Die Senderdaten stammen aus der Community-gepflegten Datenbank radio-browser.info und ermöglichen eine schnelle, effiziente Sendersuche durch serverseitige Filterung.
+
+Funktionen:
+
+• Suchen &amp; entdecken — durchsuche tausende Sender aus aller Welt, direkt auf dem Server gefiltert für schnelle Ergebnisse.
+
+• Favoriten — speichere deine bevorzugten Sender in einer persönlichen Liste für schnellen Zugriff.
+
+• Genre-Filterung — definiere eigene Genres und nutze sie zum Filtern deiner Favoriten, damit du dein Radioerlebnis vollständig selbst organisieren kannst.
+
+• Nachrichten-Planer — wenn für einen Sender aktiviert, wechselt der Player automatisch jede halbe oder volle Stunde für 5 oder 10 Minuten zu diesem Sender und kehrt danach nahtlos zu dem zurück, was du zuvor gehört hast.
+
+• Sleep-Timer — stelle einen Timer ein, um die Wiedergabe nach einer gewählten Dauer automatisch zu beenden.
+
+• Moderne Material 3 Oberfläche
+
+Verfügbar auf Englisch, Deutsch, Französisch und Italienisch.
+
+Mindest-Android-Version: Android 9 (API 28)
+

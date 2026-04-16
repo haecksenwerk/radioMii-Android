@@ -16,7 +16,7 @@ Features:
 
 • Sleep timer — set a timer to stop playback automatically after a chosen duration.
 
-• Clean, modern UI — built with Material 3 and Jetpack Compose for a smooth and responsive experience.
+• Clean, modern UI built with Material 3.
 
 Available in English, German, French, and Italian.
 
