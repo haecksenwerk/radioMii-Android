@@ -19,9 +19,9 @@ import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.radiomii.R
 import com.radiomii.domain.model.Station
-import com.radiomii.ui.components.TagLabels
 
 private const val RECOMMENDED_NAME_LENGTH = 35
 
@@ -58,7 +58,7 @@ fun AssignFilterDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.favorites_assign_filter)) },
+        title = { Text(stringResource(R.string.favorites_edit_favorite)) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 // Station info header with editable name
@@ -119,9 +119,36 @@ fun AssignFilterDialog(
                     }
                 }
 
-                TagLabels(station = station, maxTags = 3)
-                Spacer(modifier = Modifier.height(8.dp))
+                // Show all station tags (genre tags only, no votes/codec/country chips)
+                if (station.tagList.isNotEmpty()) {
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                        verticalArrangement = Arrangement.spacedBy(4.dp),
+                    ) {
+                        station.tagList.forEach { tag ->
+                            Surface(
+                                shape = MaterialTheme.shapes.extraSmall,
+                                color = MaterialTheme.colorScheme.secondaryContainer,
+                            ) {
+                                Text(
+                                    text = tag,
+                                    color = MaterialTheme.colorScheme.onSecondaryContainer,
+                                    fontSize = 12.sp,
+                                    lineHeight = 12.sp,
+                                    modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp),
+                                )
+                            }
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(4.dp))
                 HorizontalDivider()
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = stringResource(R.string.favorites_assign_filter),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
 
                 if (filterNames.isEmpty()) {
                     Text(

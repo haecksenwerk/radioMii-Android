@@ -37,6 +37,7 @@
     <string name="favorites_create_filter_hint">Tip: Assign stations by swiping right in edit mode.</string>
     <string name="favorites_duplicate_filter">A filter with this name already exists.</string>
     <string name="favorites_assign_filter">Assign filter</string>
+    <string name="favorites_edit_favorite">Edit favorite</string>
     <string name="favorites_station_name_length_hint">%1$d/%2$d – name is quite long</string>
     <string name="favorites_no_filters">No filters created yet. Create one in Settings.</string>
     <string name="favorites_no_filters_snackbar">No filter chips yet — create one in Settings first</string>

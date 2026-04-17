@@ -295,7 +295,7 @@ fun FavoritesScreen(
                                                     .padding(horizontal = 20.dp),
                                                 contentAlignment = Alignment.CenterStart,
                                             ) {
-                                                Icon(Icons.Default.FilterAlt, null, tint = MaterialTheme.colorScheme.onTertiary)
+                                                Icon(Icons.Default.Edit, null, tint = MaterialTheme.colorScheme.onTertiary)
                                             }
                                         } else if (direction == SwipeToDismissBoxValue.EndToStart) {
                                             Box(
