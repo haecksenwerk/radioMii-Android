@@ -36,10 +36,25 @@ jobs:
           mv app/build/outputs/apk/release/app-release.apk \
              "app/build/outputs/apk/release/radioMii-${{ github.ref_name }}.apk"
 
+      - name: Read changelog
+        id: changelog
+        run: |
+          VERSION_CODE=$(grep -E '^\s*versionCode\s*=' app/build.gradle.kts | grep -oE '[0-9]+')
+          CHANGELOG_FILE="fastlane/metadata/android/en-US/changelogs/${VERSION_CODE}.txt"
+          if [ -f "$CHANGELOG_FILE" ]; then
+            BODY=$(cat "$CHANGELOG_FILE")
+          else
+            BODY="No changelog available for version code ${VERSION_CODE}."
+          fi
+          # Write to a temp file to avoid issues with multiline strings in env
+          echo "$BODY" > /tmp/release_notes.txt
+          echo "version_code=${VERSION_CODE}" >> "$GITHUB_OUTPUT"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           name: "radioMii ${{ github.ref_name }}"
           target_commitish: main
+          body_path: /tmp/release_notes.txt
           files: "app/build/outputs/apk/release/radioMii-${{ github.ref_name }}.apk"
 
