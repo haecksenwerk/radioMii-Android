@@ -170,6 +170,7 @@ fun FavoritesScreen(
                                         menuExpanded = false
                                     },
                                     leadingIcon = { Icon(if (isCompact) Icons.Default.UnfoldMore else Icons.Default.UnfoldLess, null) },
+                                    enabled = favorites.isNotEmpty(),
                                 )
                                 // Show/Hide filter buttons
                                 DropdownMenuItem(
@@ -191,6 +192,7 @@ fun FavoritesScreen(
                                             null,
                                         )
                                     },
+                                    enabled = favorites.isNotEmpty(),
                                 )
                                 HorizontalDivider()
                                 DropdownMenuItem(
