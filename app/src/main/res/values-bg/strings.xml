@@ -42,7 +42,7 @@
     <string name="favorites_no_filters">Няма създадени филтри. Създайте един в Настройките.</string>
     <string name="favorites_no_filters_snackbar">Няма филтри — създайте такъв в Настройките</string>
     <string name="favorites_delete_filter">Изтрий филтъра</string>
-    <string name="favorites_delete_filter_message">Изтриване на филтъра \"%1$s\"? Станциите няма да бъдат премахнати от любимите.</string>
+    <string name="favorites_delete_filter_message">Изтриване на филтъра \"%1$s\"? Станциите ще да бъдат премахнати от любимите.</string>
     <string name="favorites_reorder_filters">Пренареждане на филтри</string>
     <string name="favorites_saved">Любимите са запазени успешно</string>
     <string name="favorites_loaded">Любимите са заредени успешно</string>
@@ -122,7 +122,7 @@
 
     <!-- Scheduled News -->
     <string name="scheduled_news_title">Планирани новини</string>
-    <string name="scheduled_news_enable">Активирай планировчик на новини</string>
+    <string name="scheduled_news_enable">Активирай органайзер на новини</string>
     <string name="scheduled_news_interval">Интервал</string>
     <string name="scheduled_news_hourly">Ежечасно</string>
     <string name="scheduled_news_half_hourly">На всеки 30 мин</string>
@@ -165,7 +165,6 @@
     <string name="overlay_vote_success">Благодаря за гласа ти!</string>
     <string name="overlay_vote_already">Вече сте гласували за тази станция</string>
     <string name="overlay_vote_error">Гласът не можа да бъде подаден</string>
-    <string name="overlay_scheduled_news">Планирани новини</string>
     <string name="overlay_find_station_icon">Намери икона на станцията</string>
     <string name="overlay_find_icon_searching">Търсене на икони…</string>
     <string name="overlay_find_icon_pick">Докоснете икона, за да я използвате</string>
@@ -183,7 +182,7 @@
     <string name="custom_stream_homepage">Начална страница (незадължително)</string>
     <string name="custom_stream_country_code">Код на държава (незадължително)</string>
     <string name="custom_stream_country_code_placeholder">напр. DE или UK</string>
-    <string name="custom_stream_url_invalid">Моля, въведете валиден URL на поток (трябва да започва с http)</string>
+    <string name="custom_stream_url_invalid">Моля, въведете валиден URL адрес за поток (трябва да започва с http/https)</string>
 
     <!-- Sleep timer -->
     <string name="sleep_timer_title">Таймер за сън</string>

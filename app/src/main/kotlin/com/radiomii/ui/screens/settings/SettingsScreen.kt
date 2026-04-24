@@ -69,10 +69,8 @@ private data class LanguageOption(val code: String, val nativeName: String, val 
 private val SUPPORTED_LANGUAGES = listOf(
     LanguageOption("system", "System", "System language"),
     LanguageOption("en", "English", "English"),
-    LanguageOption("bg", "Български", "Bulgarian"),
     LanguageOption("de", "Deutsch", "German"),
-    LanguageOption("fr", "Français", "French"),
-    LanguageOption("it", "Italiano", "Italian"),
+    LanguageOption("bg", "Български", "Bulgarian"),
 )
 
 @OptIn(ExperimentalMaterial3Api::class)

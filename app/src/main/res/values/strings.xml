@@ -165,7 +165,6 @@
     <string name="overlay_vote_success">Thank you for your vote!</string>
     <string name="overlay_vote_already">You\u0027ve already voted for this station</string>
     <string name="overlay_vote_error">Could not submit vote</string>
-    <string name="overlay_scheduled_news">Scheduled news</string>
     <string name="overlay_find_station_icon">Find station icon</string>
     <string name="overlay_find_icon_searching">Searching for icons…</string>
     <string name="overlay_find_icon_pick">Tap an icon to use it</string>

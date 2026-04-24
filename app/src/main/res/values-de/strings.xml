@@ -81,7 +81,7 @@
     <string name="settings_appearance_dark">Dunkel</string>
     <string name="settings_appearance_system">System</string>
     <string name="settings_appearance_theme_color">Designfarbe</string>
-    <string name="settings_appearance_dynamic">Dynamisch</string>
+    <string name="settings_appearance_dynamic">Adaptiv</string>
     <string name="settings_appearance_colors">Farben</string>
     <string name="settings_appearance_true_black">Tiefes Schwarz</string>
     <string name="settings_appearance_true_black_desc">Dunkleres Design für OLED Displays</string>
@@ -121,8 +121,8 @@
     <string name="settings_favorites_highlight_unassigned_desc">Im Bearbeitungsmodus Sender ohne Filter markieren</string>
 
     <!-- Scheduled News -->
-    <string name="scheduled_news_title">Geplante Nachrichten</string>
-    <string name="scheduled_news_enable">Nachrichten-Planer aktivieren</string>
+    <string name="scheduled_news_title">Nachrichten-Timer</string>
+    <string name="scheduled_news_enable">Automatische Nachrichtenwiedergabe</string>
     <string name="scheduled_news_interval">Intervall</string>
     <string name="scheduled_news_hourly">Stündlich</string>
     <string name="scheduled_news_half_hourly">Alle 30 Min.</string>
@@ -165,8 +165,7 @@
     <string name="overlay_vote_success">Danke für deine Stimme!</string>
     <string name="overlay_vote_already">Du hast bereits für diesen Sender abgestimmt</string>
     <string name="overlay_vote_error">Abstimmung konnte nicht übermittelt werden</string>
-    <string name="overlay_scheduled_news">Geplante Nachrichten</string>
-    <string name="overlay_find_station_icon">Sendericon suchen</string>
+    <string name="overlay_find_station_icon">Sender-Icon suchen</string>
     <string name="overlay_find_icon_searching">Suche nach Icons…</string>
     <string name="overlay_find_icon_pick">Tippe auf ein Icon, um es zu verwenden</string>
     <string name="overlay_find_icon_no_results">Keine Icons für diesen Sender gefunden.</string>
@@ -192,7 +191,7 @@
     <string name="sleep_timer_stop">Timer stoppen</string>
     <string name="sleep_timer_remaining">Das Radio stoppt in %1$d Minuten</string>
     <string name="sleep_timer_cancel_on_stop">Bei Wiedergabestopp abbrechen</string>
-    <string name="sleep_timer_cancel_on_stop_desc">Wird zurückgesetzt, wenn das Audio unterbrochen oder ein neuer Sender gestartet wird</string>
+    <string name="sleep_timer_cancel_on_stop_desc">Wird zurückgesetzt, wenn die Wiedergabe unterbrochen oder ein neuer Sender gestartet wird</string>
 
     <!-- Legal info -->
     <string name="legal_title">Rechtliche Hinweise</string>

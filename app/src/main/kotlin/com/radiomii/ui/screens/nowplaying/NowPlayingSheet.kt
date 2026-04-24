@@ -197,7 +197,7 @@ fun NowPlayingSheet(
                                 IconButton(onClick = { showNewsDialog.value = true }) {
                                     Icon(
                                         imageVector = Icons.Outlined.Newspaper,
-                                        contentDescription = stringResource(R.string.overlay_scheduled_news),
+                                        contentDescription = null,
                                         tint = if (isNewsStation) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
                                     )
                                 }
