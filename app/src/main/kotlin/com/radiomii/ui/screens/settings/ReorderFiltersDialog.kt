@@ -1,4 +1,4 @@
-package com.radiomii.ui.screens.favorites
+package com.radiomii.ui.screens.settings
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.layout.*
