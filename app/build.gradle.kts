@@ -18,14 +18,14 @@ android {
         applicationId = "com.radiomii"
         minSdk = 28
         targetSdk = 36
-        versionCode = 3
-        versionName = "0.9.2"
+        versionCode = 4
+        versionName = "1.0.0"
         buildConfigField("String", "GIT_HASH", "\"$gitHash\"")
     }
 
     @Suppress("UnstableApiUsage")
     androidResources {
-        localeFilters += listOf("en", "bg", "de", "fr", "it")
+        localeFilters += listOf("en", "bg", "de")
     }
 
     testOptions {

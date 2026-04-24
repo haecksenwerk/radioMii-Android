@@ -1,0 +1,5 @@
+• Add dismissible usage hints to search and favorites screens
+• Fix bitrate label bug
+• Improve Edit-Favorite dialog layout
+• Update DE and BG translations
+• Disable Favorites-Screen menu items when list is empty
