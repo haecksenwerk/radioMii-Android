@@ -51,9 +51,11 @@ fun TagLabels(
 
         // Codec + bitrate
         if (station.codec.isNotBlank() || station.bitrate > 0) {
+            // radio-browser.org returns 128000 instead of 128 when bitrate is chosen as the sort criteria
+            val formattedBitrate = if (station.bitrate >= 1000) station.bitrate / 1000 else station.bitrate
             val label = when {
-                station.codec.isNotBlank() && station.bitrate > 0 -> "${station.codec} ${station.bitrate}k"
-                station.bitrate > 0 -> "${station.bitrate}k"
+                station.codec.isNotBlank() && station.bitrate > 0 -> "${station.codec} ${formattedBitrate}k"
+                station.bitrate > 0 -> "${formattedBitrate}k"
                 else -> station.codec
             }
             SmallChip(label = label, isHighlighted = activeSortOrder == SortOrder.BITRATE)
