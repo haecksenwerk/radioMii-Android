@@ -19,6 +19,7 @@
     <string name="search_by_tag">Търсене по жанр</string>
     <string name="search_no_results">Няма резултати за търсенето</string>
     <string name="search_error_message">Търсенето е неуспешно. Проверете връзката и опитайте отново.</string>
+    <string name="search_hint_text">Натискай бутона в горния десен ъгъл, за да превключите между търсене по име на станция и жанр</string>
     <string name="search_country">Държава</string>
     <string name="search_country_any">Всяка</string>
 
@@ -46,6 +47,7 @@
     <string name="favorites_delete_filter">Изтрий филтъра</string>
     <string name="favorites_delete_filter_message">Изтриване на филтъра \"%1$s\"? Станциите ще да бъдат премахнати от любимите.</string>
     <string name="favorites_reorder_filters">Пренареждане на филтри</string>
+    <string name="favorites_hint_text">Използвай жестове за плъзгане наляво/надясно за редактиране/изтриване</string>
     <string name="favorites_saved">Любимите са запазени успешно</string>
     <string name="favorites_loaded">Любимите са заредени успешно</string>
     <string name="favorites_save_error">Неуспешен запис на любими</string>

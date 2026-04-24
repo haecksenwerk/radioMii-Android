@@ -166,5 +166,7 @@ class AppViewModel @Inject constructor(
     fun setScheduledNews(news: ScheduledNews) = viewModelScope.launch { settingsDataStore.setScheduledNews(news) }
     fun setCompactRow(compact: Boolean) = viewModelScope.launch { settingsDataStore.setCompactRow(compact) }
     fun setShowFilterBar(show: Boolean) = viewModelScope.launch { settingsDataStore.setShowFilterBar(show) }
+    fun setSearchHintShown(shown: Boolean) = viewModelScope.launch { settingsDataStore.setSearchHintShown(shown) }
+    fun setFavoritesHintShown(shown: Boolean) = viewModelScope.launch { settingsDataStore.setFavoritesHintShown(shown) }
     fun setSearchOptions(opts: SearchOptions) = viewModelScope.launch { settingsDataStore.setSearchOptions(opts) }
 }

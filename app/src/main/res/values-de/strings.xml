@@ -19,6 +19,7 @@
     <string name="search_by_tag">Suche nach Genre</string>
     <string name="search_no_results">Keine Ergebnisse fr diese Suche</string>
     <string name="search_error_message">Suche fehlgeschlagen. Bitte Verbindung prüfen und erneut versuchen.</string>
+    <string name="search_hint_text">Tippe auf den Button oben rechts, um zwischen der Suche nach Sendernamen und Genres zu wechseln</string>
     <string name="search_country">Land</string>
     <string name="search_country_any">Beliebig</string>
 
@@ -46,6 +47,7 @@
     <string name="favorites_delete_filter">Filter löschen</string>
     <string name="favorites_delete_filter_message">Filter \"%1$s\" löschen? Sender werden nicht aus den Favoriten entfernt.</string>
     <string name="favorites_reorder_filters">Filter sortieren</string>
+    <string name="favorites_hint_text">Nutze die Anfasser zum Sortieren und wische nach links/rechts zum Bearbeiten oder Löschen</string>
     <string name="favorites_saved">Favoriten erfolgreich gesichert</string>
     <string name="favorites_loaded">Favoriten erfolgreich geladen</string>
     <string name="favorites_save_error">Favoriten konnten nicht gesichert werden</string>

@@ -213,6 +213,41 @@ fun SearchScreen(
                 }
             }
 
+            // hint for search mode toggle
+            AnimatedVisibility(visible = !settings.searchHintShown) {
+                Surface(
+                    color = MaterialTheme.colorScheme.secondaryContainer,
+                    shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.padding(start = 12.dp, end = 4.dp, top = 4.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ShortText,
+                            contentDescription = null,
+                            modifier = Modifier.size(20.dp),
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Text(
+                            text = stringResource(R.string.search_hint_text),
+                            style = MaterialTheme.typography.bodySmall,
+                            modifier = Modifier.weight(1f),
+                            color = MaterialTheme.colorScheme.onSecondaryContainer
+                        )
+                        IconButton(onClick = { scope.launch { appViewModel.setSearchHintShown(true) } }) {
+                            Icon(
+                                Icons.Default.Close,
+                                contentDescription = "Dismiss",
+                                modifier = Modifier.size(18.dp),
+                            )
+                        }
+                    }
+                }
+            }
+
             // Tag chip row — shown in TAG mode with BUTTONS suggestion mode when tag buttons are enabled
             AnimatedVisibility(
                 visible = searchMode == SearchMode.TAG

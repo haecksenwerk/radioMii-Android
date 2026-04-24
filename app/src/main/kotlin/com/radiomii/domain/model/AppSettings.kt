@@ -17,6 +17,8 @@ data class AppSettings(
     val showFindOnButton: Boolean = true,
     val showFilterBar: Boolean = true,
     val highlightUnassigned: Boolean = false,
+    val searchHintShown: Boolean = false,
+    val favoritesHintShown: Boolean = false,
     val searchOptions: SearchOptions = SearchOptions(),
     val scheduledNews: ScheduledNews = ScheduledNews(),
 )

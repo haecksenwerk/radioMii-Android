@@ -27,6 +27,8 @@ private object Keys {
     val SHOW_FIND_ON_BUTTON = booleanPreferencesKey("show_find_on_button")
     val SHOW_FILTER_BAR = booleanPreferencesKey("show_filter_bar")
     val HIGHLIGHT_UNASSIGNED = booleanPreferencesKey("highlight_unassigned")
+    val SEARCH_HINT_SHOWN = booleanPreferencesKey("search_hint_shown")
+    val FAVORITES_HINT_SHOWN = booleanPreferencesKey("favorites_hint_shown")
     val SEARCH_OPTIONS_JSON = stringPreferencesKey("search_options_json")
     val ACTIVE_STATION_JSON = stringPreferencesKey("active_station_json")
     val SLEEP_TIMER_MINUTES = intPreferencesKey("sleep_timer_minutes")
@@ -103,6 +105,8 @@ class SettingsDataStore @Inject constructor(
             showFindOnButton = prefs[Keys.SHOW_FIND_ON_BUTTON] ?: false,
             showFilterBar = prefs[Keys.SHOW_FILTER_BAR] ?: true,
             highlightUnassigned = prefs[Keys.HIGHLIGHT_UNASSIGNED] ?: false,
+            searchHintShown = prefs[Keys.SEARCH_HINT_SHOWN] ?: false,
+            favoritesHintShown = prefs[Keys.FAVORITES_HINT_SHOWN] ?: false,
             searchOptions = searchOpts.toDomain(),
             scheduledNews = prefs[Keys.SCHEDULED_NEWS_JSON]?.let {
                 runCatching { json.decodeFromString<ScheduledNews>(it) }.getOrDefault(ScheduledNews())
@@ -141,6 +145,8 @@ class SettingsDataStore @Inject constructor(
     suspend fun setShowFindOnButton(show: Boolean) = context.dataStore.edit { it[Keys.SHOW_FIND_ON_BUTTON] = show }
     suspend fun setShowFilterBar(show: Boolean) = context.dataStore.edit { it[Keys.SHOW_FILTER_BAR] = show }
     suspend fun setHighlightUnassigned(enabled: Boolean) = context.dataStore.edit { it[Keys.HIGHLIGHT_UNASSIGNED] = enabled }
+    suspend fun setSearchHintShown(shown: Boolean) = context.dataStore.edit { it[Keys.SEARCH_HINT_SHOWN] = shown }
+    suspend fun setFavoritesHintShown(shown: Boolean) = context.dataStore.edit { it[Keys.FAVORITES_HINT_SHOWN] = shown }
     suspend fun setSleepTimerMinutes(minutes: Int) = context.dataStore.edit { it[Keys.SLEEP_TIMER_MINUTES] = minutes }
     suspend fun setSleepTimerCancelOnStop(enabled: Boolean) = context.dataStore.edit { it[Keys.SLEEP_TIMER_CANCEL_ON_STOP] = enabled }
 

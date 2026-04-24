@@ -19,6 +19,7 @@
     <string name="search_by_tag">Search by genre</string>
     <string name="search_no_results">No results for that search</string>
     <string name="search_error_message">Search failed. Please check your connection and try again.</string>
+    <string name="search_hint_text">Push the button in the upper right corner to toggle between station name and genre search mode</string>
     <string name="search_country">Country</string>
     <string name="search_country_any">Any</string>
 
@@ -46,6 +47,7 @@
     <string name="favorites_delete_filter">Delete filter</string>
     <string name="favorites_delete_filter_message">Delete filter \"%1$s\"? Stations won\'t be removed from favorites.</string>
     <string name="favorites_reorder_filters">Reorder filter chips</string>
+    <string name="favorites_hint_text">Use the \'drag\' handles for reordering and swipe left/right gestures for edit/delete</string>
     <string name="favorites_saved">Favorites saved successfully</string>
     <string name="favorites_loaded">Favorites loaded successfully</string>
     <string name="favorites_save_error">Could not save favorites</string>

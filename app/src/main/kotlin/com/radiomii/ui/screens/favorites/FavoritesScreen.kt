@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.FilterAlt
@@ -222,6 +223,41 @@ fun FavoritesScreen(
                     onLongPress = { showReorderFiltersDialog.value = true },
                     modifier = Modifier.padding(vertical = 4.dp),
                 )
+            }
+
+            // hint for reordering and editing favorites
+            AnimatedVisibility(visible = isEditMode && !settings.favoritesHintShown) {
+                Surface(
+                    color = MaterialTheme.colorScheme.secondaryContainer,
+                    shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+                ) {
+                    Row(
+                        modifier = Modifier.padding(start = 12.dp, end = 4.dp, top = 4.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Info,
+                            contentDescription = null,
+                            modifier = Modifier.size(20.dp),
+                            tint = MaterialTheme.colorScheme.onSecondaryContainer
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Text(
+                            text = stringResource(R.string.favorites_hint_text),
+                            style = MaterialTheme.typography.bodySmall,
+                            modifier = Modifier.weight(1f),
+                            color = MaterialTheme.colorScheme.onSecondaryContainer
+                        )
+                        IconButton(onClick = { scope.launch { appViewModel.setFavoritesHintShown(true) } }) {
+                            Icon(
+                                Icons.Default.Close,
+                                contentDescription = "Dismiss",
+                                modifier = Modifier.size(18.dp)
+                            )
+                        }
+                    }
+                }
             }
 
             if (favorites.isEmpty()) {
