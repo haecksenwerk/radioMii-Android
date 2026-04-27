@@ -10,9 +10,13 @@ android {
     namespace = "com.radiomii"
     compileSdk = 36
 
-    val gitHash = providers.exec {
-        commandLine("git", "rev-parse", "--short", "HEAD")
-    }.standardOutput.asText.get().trim()
+    val gitHash = try {
+        providers.exec {
+            commandLine("git", "rev-parse", "--short", "HEAD")
+        }.standardOutput.asText.get().trim()
+    } catch (e: Exception) {
+        "unknown"
+    }
 
     defaultConfig {
         applicationId = "com.radiomii"
