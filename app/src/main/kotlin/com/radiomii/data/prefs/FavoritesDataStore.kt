@@ -31,6 +31,9 @@ data class FavoritesData(
     val filterMap: Map<String, List<String>> = emptyMap(),
 )
 
+// Outcome of merging a backup into the current favorites.
+data class MergeResult(val added: Int, val skipped: Int)
+
 private val favoritesJson = Json { ignoreUnknownKeys = true; coerceInputValues = true }
 
 @OptIn(ExperimentalSerializationApi::class)
@@ -177,5 +180,51 @@ class FavoritesDataStore @Inject constructor(
     // Replaces the entire dataset (backup restore).
     suspend fun replaceAll(data: FavoritesData) {
         store.updateData { data }
+    }
+
+    // Merges a backup into the current dataset: stations whose UUID is already present are
+    // skipped, as are stations that would exceed MAX_FAVORITES.
+    suspend fun mergeAll(data: FavoritesData): MergeResult {
+        var added = 0
+        var skipped = 0
+        store.updateData { current ->
+            added = 0
+            skipped = 0
+            val knownUuids = current.stations.mapTo(mutableSetOf()) { it.stationuuid }
+            val newStations = mutableListOf<Station>()
+            for (station in data.stations) {
+                if (!knownUuids.add(station.stationuuid) ||
+                    current.stations.size + newStations.size >= MAX_FAVORITES
+                ) {
+                    skipped++
+                } else {
+                    newStations += station
+                }
+            }
+            added = newStations.size
+
+            val mergedFilters = current.filters.toMutableList()
+            for (filter in data.filters) {
+                if (mergedFilters.size >= MAX_FILTERS) break
+                if (mergedFilters.none { it.equals(filter, ignoreCase = true) }) mergedFilters += filter
+            }
+
+            // Filter assignments are only taken over for newly added stations; existing ones keep theirs.
+            val mergedMap = current.filterMap.toMutableMap()
+            for (station in newStations) {
+                val assigned = data.filterMap[station.stationuuid]
+                    ?.filter { name -> mergedFilters.any { it.equals(name, ignoreCase = true) } }
+                    ?.takeIf { it.isNotEmpty() }
+                    ?: continue
+                mergedMap[station.stationuuid] = assigned
+            }
+
+            current.copy(
+                stations = current.stations + newStations,
+                filters = mergedFilters,
+                filterMap = mergedMap,
+            )
+        }
+        return MergeResult(added = added, skipped = skipped)
     }
 }

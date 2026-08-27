@@ -35,6 +35,7 @@ import javax.inject.Inject
 sealed class ImportExportEvent {
     data object Saved : ImportExportEvent()
     data object Loaded : ImportExportEvent()
+    data class Merged(val added: Int, val skipped: Int) : ImportExportEvent()
     data object SaveError : ImportExportEvent()
     data object LoadError : ImportExportEvent()
 }
@@ -178,19 +179,10 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
-    // Reads and imports favorites from the given SAF URI.
+    // Reads and imports favorites from the given SAF URI, replacing the current ones.
     fun loadFavoritesFromUri(uri: Uri) {
         viewModelScope.launch {
-            withContext(Dispatchers.IO) {
-                runCatching {
-                    val jsonStr = context.contentResolver.openInputStream(uri)
-                        ?.use { it.readBytes().decodeToString() }
-                        ?: error("Cannot read file")
-                    runCatching { json.decodeFromString<FavoritesData>(jsonStr) }
-                        .getOrNull()
-                        ?: FavoritesData(stations = json.decodeFromString<List<Station>>(jsonStr))
-                }
-            }.onSuccess { data ->
+            readFavoritesFile(uri).onSuccess { data ->
                 favoritesRepository.replaceAll(data)
                 _importExportMessage.value = ImportExportEvent.Loaded
             }.onFailure {
@@ -198,6 +190,33 @@ class SettingsViewModel @Inject constructor(
             }
         }
     }
+
+    // Reads favorites from the given SAF URI and adds them to the current ones,
+    // skipping stations that are already favorited.
+    fun mergeFavoritesFromUri(uri: Uri) {
+        viewModelScope.launch {
+            readFavoritesFile(uri).onSuccess { data ->
+                val result = favoritesRepository.mergeAll(data)
+                _importExportMessage.value =
+                    ImportExportEvent.Merged(added = result.added, skipped = result.skipped)
+            }.onFailure {
+                _importExportMessage.value = ImportExportEvent.LoadError
+            }
+        }
+    }
+
+    // Parses a backup file; also accepts the legacy format holding a bare station list.
+    private suspend fun readFavoritesFile(uri: Uri): Result<FavoritesData> =
+        withContext(Dispatchers.IO) {
+            runCatching {
+                val jsonStr = context.contentResolver.openInputStream(uri)
+                    ?.use { it.readBytes().decodeToString() }
+                    ?: error("Cannot read file")
+                runCatching { json.decodeFromString<FavoritesData>(jsonStr) }
+                    .getOrNull()
+                    ?: FavoritesData(stations = json.decodeFromString<List<Station>>(jsonStr))
+            }
+        }
 
     fun clearImportExportMessage() {
         _importExportMessage.value = null

@@ -198,5 +198,42 @@ class FavoritesDataStoreTest {
         val snapshot = store.getSnapshot()
         assertEquals(replacement, snapshot)
     }
-}
 
+    @Test
+    fun `mergeAll adds new stations and skips existing uuids`() = testScope.runTest {
+        store.addFavorite(station("m1"))
+        store.addFavorite(station("m2"))
+
+        val result = store.mergeAll(
+            FavoritesData(stations = listOf(station("m2", "Renamed"), station("m3"))),
+        )
+
+        assertEquals(1, result.added)
+        assertEquals(1, result.skipped)
+        val stations = store.favoritesFlow.first()
+        assertEquals(listOf("m1", "m2", "m3"), stations.map { it.stationuuid })
+        // The existing entry is kept as-is, not overwritten by the imported one
+        assertEquals("Station m2", stations.first { it.stationuuid == "m2" }.name)
+    }
+
+    @Test
+    fun `mergeAll takes over filters and assignments of added stations`() = testScope.runTest {
+        store.createFilter("Rock")
+        store.addFavorite(station("f1"))
+        store.toggleStationFilter("f1", "Rock")
+
+        store.mergeAll(
+            FavoritesData(
+                stations = listOf(station("f1"), station("f2")),
+                filters = listOf("rock", "Jazz"),
+                filterMap = mapOf("f1" to listOf("Jazz"), "f2" to listOf("Jazz")),
+            ),
+        )
+
+        // "rock" is a case-insensitive duplicate, "Jazz" is new
+        assertEquals(listOf("Rock", "Jazz"), store.filtersFlow.first())
+        val filterMap = store.filterMapFlow.first()
+        assertEquals(listOf("Rock"), filterMap["f1"])
+        assertEquals(listOf("Jazz"), filterMap["f2"])
+    }
+}

@@ -50,6 +50,7 @@
     <string name="favorites_hint_text">Use the \'drag\' handles for reordering and swipe left/right gestures for edit/delete</string>
     <string name="favorites_saved">Favorites saved successfully</string>
     <string name="favorites_loaded">Favorites loaded successfully</string>
+    <string name="favorites_merged">%1$d stations added, %2$d skipped</string>
     <string name="favorites_save_error">Could not save favorites</string>
     <string name="favorites_load_error">Could not load favorites</string>
 
@@ -114,7 +115,9 @@
     <string name="settings_favorites_add_custom">Add station manually</string>
     <string name="settings_favorites_add_custom_desc">Add a radio station by stream URL</string>
     <string name="settings_favorites_import">Load favorites</string>
-    <string name="settings_favorites_import_desc">Load favorites from a file</string>
+    <string name="settings_favorites_import_desc">Replaces current favorites with backup</string>
+    <string name="settings_favorites_merge">Add favorites</string>
+    <string name="settings_favorites_merge_desc">Add stations from backup file</string>
     <string name="settings_favorites_save">Save favorites</string>
     <string name="settings_favorites_save_desc">Write favorites to a file</string>
     <string name="settings_favorites_overwrite">Overwrite last backup</string>

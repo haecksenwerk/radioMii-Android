@@ -33,6 +33,7 @@ import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.FilterAlt
 import androidx.compose.material.icons.outlined.FolderOpen
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.LibraryAdd
 import androidx.compose.material.icons.outlined.LibraryMusic
 import androidx.compose.material.icons.outlined.Lock
 import androidx.compose.material.icons.outlined.Radio
@@ -115,17 +116,24 @@ fun SettingsScreen(
     val loadLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.OpenDocument(),
     ) { uri -> uri?.let { viewModel.loadFavoritesFromUri(it) } }
+    val mergeLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.OpenDocument(),
+    ) { uri -> uri?.let { viewModel.mergeFavoritesFromUri(it) } }
 
-    // Handle import/export feedback
-    LaunchedEffect(importExportMessage) {
-        importExportMessage?.let { event ->
-            val text = when (event) {
-                is ImportExportEvent.Saved     -> strFavoritesSaved
-                is ImportExportEvent.Loaded    -> strFavoritesLoaded
-                is ImportExportEvent.SaveError -> strFavoritesSaveError
-                is ImportExportEvent.LoadError -> strFavoritesLoadError
-            }
-            snackbarHostState.showSnackbar(text)
+    // Handle import/export feedback – resolved in composable scope so it follows configuration changes
+    val importExportText = importExportMessage?.let { event ->
+        when (event) {
+            is ImportExportEvent.Saved     -> strFavoritesSaved
+            is ImportExportEvent.Loaded    -> strFavoritesLoaded
+            is ImportExportEvent.Merged    ->
+                stringResource(R.string.favorites_merged, event.added, event.skipped)
+            is ImportExportEvent.SaveError -> strFavoritesSaveError
+            is ImportExportEvent.LoadError -> strFavoritesLoadError
+        }
+    }
+    LaunchedEffect(importExportText) {
+        importExportText?.let {
+            snackbarHostState.showSnackbar(it)
             viewModel.clearImportExportMessage()
         }
     }
@@ -463,6 +471,25 @@ fun SettingsScreen(
                             )
                         },
                         onClick = { loadLauncher.launch(arrayOf("application/json", "text/plain")) },
+                        trailingContent = {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        },
+                    )
+                    ClickableRow(
+                        title = stringResource(R.string.settings_favorites_merge),
+                        subtitle = stringResource(R.string.settings_favorites_merge_desc),
+                        leadingIcon = {
+                            Icon(
+                                imageVector = Icons.Outlined.LibraryAdd,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        },
+                        onClick = { mergeLauncher.launch(arrayOf("application/json", "text/plain")) },
                         trailingContent = {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,

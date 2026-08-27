@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.radiomii"
-    compileSdk = 37
+    compileSdk = 36
 
     val gitHash = try {
         providers.exec {
@@ -21,7 +21,7 @@ android {
     defaultConfig {
         applicationId = "com.radiomii"
         minSdk = 28
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 4
         versionName = "1.0.0"
         buildConfigField("String", "GIT_HASH", "\"$gitHash\"")

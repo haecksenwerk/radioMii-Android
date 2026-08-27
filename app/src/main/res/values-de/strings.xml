@@ -50,6 +50,7 @@
     <string name="favorites_hint_text">Nutze die Anfasser zum Sortieren und wische nach links/rechts zum Bearbeiten oder Löschen</string>
     <string name="favorites_saved">Favoriten erfolgreich gesichert</string>
     <string name="favorites_loaded">Favoriten erfolgreich geladen</string>
+    <string name="favorites_merged">%1$d Sender hinzugefügt, %2$d übersprungen</string>
     <string name="favorites_save_error">Favoriten konnten nicht gesichert werden</string>
     <string name="favorites_load_error">Favoriten konnten nicht geladen werden</string>
 
@@ -114,7 +115,9 @@
     <string name="settings_favorites_add_custom">Sender manuell hinzufügen</string>
     <string name="settings_favorites_add_custom_desc">Radiosender per Stream-URL hinzufügen</string>
     <string name="settings_favorites_import">Favoriten laden</string>
-    <string name="settings_favorites_import_desc">Favoriten aus einer Datei laden</string>
+    <string name="settings_favorites_import_desc">Ersetzt die aktuellen Favoriten durch die Sicherung</string>
+    <string name="settings_favorites_merge">Favoriten hinzufügen</string>
+    <string name="settings_favorites_merge_desc">Sender aus einer Sicherungsdatei hinzufügen</string>
     <string name="settings_favorites_save">Favoriten sichern</string>
     <string name="settings_favorites_save_desc">Favoriten in einer Datei speichern</string>
     <string name="settings_favorites_overwrite">Letzte Sicherung überschreiben</string>

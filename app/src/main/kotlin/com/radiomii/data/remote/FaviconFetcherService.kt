@@ -344,7 +344,6 @@ class FaviconFetcherService @Inject constructor(
                     val types: List<String> = when (val typeVal = item.opt("@type")) {
                         is JSONArray -> (0 until typeVal.length()).mapNotNull { typeVal.optString(it) }
                         is String -> listOf(typeVal)
-                        null -> emptyList()
                         else -> emptyList()
                     }
                     if (types.none { it.lowercase() in relevantTypes }) continue

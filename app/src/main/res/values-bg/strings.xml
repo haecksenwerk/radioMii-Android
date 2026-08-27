@@ -50,6 +50,7 @@
     <string name="favorites_hint_text">Използвай жестове за плъзгане наляво/надясно за редактиране/изтриване</string>
     <string name="favorites_saved">Любимите са запазени успешно</string>
     <string name="favorites_loaded">Любимите са заредени успешно</string>
+    <string name="favorites_merged">%1$d станции са добавени, %2$d са пропуснати</string>
     <string name="favorites_save_error">Неуспешен запис на любими</string>
     <string name="favorites_load_error">Неуспешно зареждане на любими</string>
 
@@ -114,7 +115,9 @@
     <string name="settings_favorites_add_custom">Добави станция ръчно</string>
     <string name="settings_favorites_add_custom_desc">Добави радиостанция чрез URL на поток</string>
     <string name="settings_favorites_import">Зареди любими</string>
-    <string name="settings_favorites_import_desc">Зареди любими от файл</string>
+    <string name="settings_favorites_import_desc">Заменя текущите любими с архива</string>
+    <string name="settings_favorites_merge">Добави любими</string>
+    <string name="settings_favorites_merge_desc">Добави станции от архивен файл</string>
     <string name="settings_favorites_save">Запази любими</string>
     <string name="settings_favorites_save_desc">Запиши любими в файл</string>
     <string name="settings_favorites_overwrite">Презапиши последния архив</string>

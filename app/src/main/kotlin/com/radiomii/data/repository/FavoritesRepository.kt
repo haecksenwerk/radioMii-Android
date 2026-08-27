@@ -2,6 +2,7 @@ package com.radiomii.data.repository
 
 import com.radiomii.data.prefs.FavoritesData
 import com.radiomii.data.prefs.FavoritesDataStore
+import com.radiomii.data.prefs.MergeResult
 import com.radiomii.domain.model.Station
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -46,4 +47,7 @@ class FavoritesRepository @Inject constructor(
 
     // Replaces the entire dataset (backup restore).
     suspend fun replaceAll(data: FavoritesData) = store.replaceAll(data)
+
+    // Adds the stations of a backup, skipping UUIDs that are already favorited.
+    suspend fun mergeAll(data: FavoritesData): MergeResult = store.mergeAll(data)
 }
