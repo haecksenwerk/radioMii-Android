@@ -1,0 +1,1 @@
+• New "Add favorites" option in Settings: merges stations from a backup file into the favorites list without creating duplicates.
