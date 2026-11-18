@@ -29,7 +29,7 @@ android {
 
     @Suppress("UnstableApiUsage")
     androidResources {
-        localeFilters += listOf("en", "bg", "de", "it")
+        localeFilters += listOf("en", "bg", "de", "it", "es")
     }
 
     testOptions {

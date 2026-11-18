@@ -1,0 +1,24 @@
+radioMii — 美音 · beautiful sound
+
+Una aplicación moderna para Android con la que explorar y reproducir emisoras de radio por Internet, desarrollada con Kotlin y Jetpack Compose (Material 3).
+
+Los datos de las emisoras proceden de la base de datos radio-browser.info, mantenida por la comunidad.
+
+Funciones:
+
+• Busca y descubre — explora miles de emisoras de todo el mundo, filtradas directamente en el servidor para obtener resultados rápidos.
+
+• Favoritos — guarda tus emisoras preferidas en una lista personal para acceder a ellas al instante.
+
+• Filtrado por géneros — define tus propios géneros y úsalos para filtrar tus favoritos.
+
+• Programador de noticias — si lo activas para una emisora, el reproductor cambia automáticamente a ella cada media hora o cada hora en punto durante 5 o 10 minutos y, después, vuelve sin interrupciones a lo que estuvieras escuchando antes.
+
+• Temporizador de apagado — configura un temporizador para que la reproducción se detenga automáticamente tras el tiempo que elijas.
+
+• Interfaz limpia y moderna creada con Material 3.
+
+Disponible en inglés, alemán, búlgaro y español.
+
+Versión mínima de Android: Android 9 (API 28)
+

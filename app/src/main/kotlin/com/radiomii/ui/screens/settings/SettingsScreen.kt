@@ -72,6 +72,7 @@ private val SUPPORTED_LANGUAGES = listOf(
     LanguageOption("de", "Deutsch", "German"),
     LanguageOption("bg", "Български", "Bulgarian"),
     LanguageOption("it", "Italiano", "Italian"),
+    LanguageOption("es", "Español", "Spanish"),
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
